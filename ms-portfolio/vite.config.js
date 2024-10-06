@@ -9,6 +9,6 @@ export default defineConfig({
     emptyOutDir: true, // Optional: clears the output directory before building
   },
   server: {
-    port: 3000, // You can set a custom port for development if needed
+    port: 8080, // You can set a custom port for development if needed
   },
 })
