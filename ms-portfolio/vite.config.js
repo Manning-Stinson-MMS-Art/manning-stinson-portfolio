@@ -1,23 +1,21 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
-
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-  build: {
-    outDir: 'dist', // Specify the output directory if you want to ensure it's correct
-    emptyOutDir: true, // Optional: clears the output directory before building
-  },
-  server: {
-    port: 8080, // You can set a custom port for development if needed
-  },
-})
-
-// vite.config.js
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import svgr from 'vite-plugin-svgr'; // Import the SVGR plugin
+import svgr from 'vite-plugin-svgr';  // Correctly import svgr
+import { resolve } from 'path';
 
 export default defineConfig({
-  plugins: [react(), svgr()], // Add svgr to the plugins array
+  plugins: [react(), svgr()],  // Corrected the syntax for svgr
+  build: {
+    outDir: 'dist',           // Specify the output directory
+    emptyOutDir: true,        // Clears the output directory before building
+  },
+  server: {
+    port: 8080,               // Set custom port for development
+  },
+  resolve: {
+    alias: {
+      // Resolve node_modules in the ms-portfolio subdirectory
+      '@': resolve(__dirname, 'ms-portfolio'), 
+    },
+  },
 });
