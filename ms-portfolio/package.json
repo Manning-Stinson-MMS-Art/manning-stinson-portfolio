@@ -27,6 +27,6 @@
     "vite-plugin-svgr": "^4.2.0"
   },
   "engines": {
-    "node": ">=16.0.0"
+    "node": "20.x" 
   }
 }
