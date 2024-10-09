@@ -1,0 +1,10 @@
+@import './variables';  /* Import variables (optional) */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $primary-bg;
+}
+
+h1 {
+  color: $primary-color;
+}
