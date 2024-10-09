@@ -17,6 +17,7 @@
     "@eslint/js": "^9.11.1",
     "@types/react": "^18.3.10",
     "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.2",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "eslint": "^9.11.1",
     "eslint-plugin-react": "^7.37.0",
@@ -26,10 +27,8 @@
     "vite": "^5.4.8",
     "vite-plugin-svgr": "^4.2.0"
   },
-"engines": {
+  "engines": {
     "node": "20.x",
     "npm": "10.x"
-}
-
-
+  }
 }
