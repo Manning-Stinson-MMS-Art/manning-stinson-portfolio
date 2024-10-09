@@ -2,8 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import './styles/main.scss';  // Import SASS
-import './index.css';  // Import global CSS
+import './styles/global.scss';  // Global styles
+// Component or page-specific styles import './index.css';  // Import global CSS
+import './styles/main.scss'; 
 
 function App() {
   const [count, setCount] = useState(0)

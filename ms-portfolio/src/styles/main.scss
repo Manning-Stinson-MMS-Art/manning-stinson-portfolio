@@ -1,10 +1,14 @@
-@import './variables';  /* Import variables (optional) */
+/* src/styles/main.scss */
+@import './variables'; /* Import variables */
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: $primary-bg;
+/* Example styles */
+h1 {
+  font-size: 2rem;
+  color: $primary-color;
 }
 
-h1 {
-  color: $primary-color;
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
 }
