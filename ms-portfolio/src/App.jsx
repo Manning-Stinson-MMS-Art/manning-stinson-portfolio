@@ -1,13 +1,12 @@
-// src/components/App.jsx
-import React from 'react';
-import HomePage from './HomePage';
-import Favicon from './favicon/Favicon'; // Adjusted import statement
+import React from "react";
+import Homepage from "./pages/homepage/HomePage"; // Note the capitalization of HomePage.jsx
+import Favicon from "./components/favicon/Favicon"; // Import the Favicon component
 
 const App = () => {
   return (
     <div>
-      <Favicon icon="/favicon.svg" /> {/* Path to your SVG favicon */}
-      <HomePage />
+      <Favicon icon="/manningstinson.svg" /> // Updated to match the SVG in public folder
+      <Homepage />
     </div>
   );
 };
