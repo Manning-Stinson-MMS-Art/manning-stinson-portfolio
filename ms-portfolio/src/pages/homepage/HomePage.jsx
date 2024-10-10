@@ -1,5 +1,6 @@
 import React from 'react';
-import GlobalStyles from '../../components/global-styles/GlobalStyles'; // Adjusted import for GlobalStyles
+import GlobalStyles from '../../components/global-styles/GlobalStyles'; // Global styles component
+import DeviceStyles from '../../components/global-styles/DeviceStyles'; // Device styles component
 import PageWrapper from '../../components/page-wrapper/PageWrapper'; // Page wrapper component
 import HeaderWrapper from '../../components/header/header-wrapper/HeaderWrapper'; // Header wrapper
 import LogoWrapper from '../../components/header/logo-wrapper/LogoWrapper'; // Logo wrapper
@@ -8,7 +9,9 @@ import HeroWrapper from './hero/HeroWrapper'; // Page-specific hero wrapper
 
 const HomePage = () => {
   return (
-    <GlobalStyles> {/* Wrap all components with GlobalStyles */}
+    <>
+      <GlobalStyles /> {/* Apply global styles */}
+      <DeviceStyles /> {/* Apply device-specific styles */}
       <PageWrapper>
         <HeaderWrapper>
           <LogoWrapper />
@@ -16,9 +19,9 @@ const HomePage = () => {
         </HeaderWrapper>
         <HeroWrapper />
         {/* Your homepage content */}
-        <h1>Hi!  Welcome. </h1>
+        <h1>Welcome to the Homepage</h1>
       </PageWrapper>
-    </GlobalStyles>
+    </>
   );
 };
 
