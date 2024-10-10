@@ -19,7 +19,7 @@ const HomePage = () => {
         </HeaderWrapper>
         <HeroWrapper />
         {/* Your homepage content */}
-        <h1>Welcome to the Homepage</h1>
+        <h1>Hi.  Welcome!</h1>
       </PageWrapper>
     </>
   );
