@@ -9,7 +9,6 @@ import '../../styles/global.scss';  // For global styles
 import '../../styles/main.scss';    // For main styles
 
 
-
 const HomePage = () => {
   return (
     <PageWrapper>
