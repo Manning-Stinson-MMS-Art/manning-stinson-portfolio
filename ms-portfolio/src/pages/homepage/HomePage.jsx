@@ -1,6 +1,6 @@
 import React from 'react';
 import GlobalStyles from '../../components/global-styles/GlobalStyles'; // Global styles component
-import DeviceStyles from '../../components/global-styles/DeviceStyles'; // Device styles component
+import DeviceStyles from '../../components/device-styles/DeviceStyles'; // Device styles component
 import PageWrapper from '../../components/page-wrapper/PageWrapper'; // Page wrapper component
 import HeaderWrapper from '../../components/header/header-wrapper/HeaderWrapper'; // Header wrapper
 import LogoWrapper from '../../components/header/logo-wrapper/LogoWrapper'; // Logo wrapper
