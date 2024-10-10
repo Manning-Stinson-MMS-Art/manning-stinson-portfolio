@@ -5,6 +5,10 @@ import HeaderWrapper from '../../components/header/header-wrapper/HeaderWrapper'
 import LogoWrapper from '../../components/header/logo-wrapper/LogoWrapper';
 import MenuWrapper from '../../components/header/menu-wrapper/MenuWrapper';
 import HeroWrapper from './hero/HeroWrapper'; // Page-specific wrapper
+import '../../styles/global.scss';  // For global styles
+import '../../styles/main.scss';    // For main styles
+
+
 
 const HomePage = () => {
   return (
