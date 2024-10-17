@@ -1,31 +1,15 @@
 import React from 'react';
-import './header-wrapper/Header.scss'; // Use SCSS file
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import './Header.scss'; // Ensure this path is correct
+import LogoWrapper from '../logo-wrapper/LogoWrapper'; // Import LogoWrapper
+import MenuWrapper from '../menu-wrapper/MenuWrapper'; // Import MenuWrapper
 
-const Header = () => {
+const HeaderWrapper = () => {
   return (
     <header className="header-wrapper">
-      <div className="logo-wrapper">
-        <h1>Logo</h1> {/* Replace with your actual logo */}
-      </div>
-      
-      <nav className="menu-wrapper">
-        <ul className="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        
-        <div className="social-media-icons">
-          <a href="https://facebook.com"><FontAwesomeIcon icon={faFacebookF} /></a>
-          <a href="https://twitter.com"><FontAwesomeIcon icon={faTwitter} /></a>
-          <a href="https://instagram.com"><FontAwesomeIcon icon={faInstagram} /></a>
-        </div>
-      </nav>
+      <LogoWrapper /> {/* Logo on the left */}
+      <MenuWrapper /> {/* Menu and social icons on the right */}
     </header>
   );
 };
 
-export default Header;
+export default HeaderWrapper;

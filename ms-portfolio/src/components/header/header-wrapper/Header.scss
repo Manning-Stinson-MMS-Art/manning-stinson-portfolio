@@ -1,6 +1,5 @@
-// Define color variables
+// SCSS for Header
 $primary-bg-color: #373B5B;
-$secondary-bg-color: #464659;
 $text-color: #fff;
 
 .header-wrapper {
@@ -8,45 +7,6 @@ $text-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px; // Adjust padding as needed
-}
-
-.logo-wrapper h1 {
+  padding: 15px;
   color: $text-color;
-  font-size: 24px; // Adjust font size as needed
-}
-
-.menu-wrapper {
-  display: flex;
-  align-items: center;
-
-  .menu {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-
-    li {
-      margin: 0 15px;
-
-      a {
-        color: $text-color;
-        text-decoration: none;
-
-        &:hover {
-          text-decoration: underline; // Optional hover effect
-        }
-      }
-    }
-  }
-
-  .social-media-icons {
-    margin-left: 20px;
-
-    a {
-      color: $text-color;
-      margin-left: 10px;
-      font-size: 18px; // Adjust size for icons
-    }
-  }
 }

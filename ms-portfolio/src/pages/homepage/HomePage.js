@@ -1,10 +1,10 @@
 import React from 'react';
-import GlobalStyles from '../../components/global-styles/GlobalStyles'; // Global styles component
-import DeviceStyles from '../../components/device-styles/DeviceStyles'; // Device styles component
-import PageWrapper from '../../components/page-wrapper/PageWrapper'; // Page wrapper component
-import Header from '../../components/header/header-wrapper/Header'; // Header component
-import HeroWrapper from './hero/HeroWrapper'; // Page-specific hero wrapper
-import './HomePage.scss'; // Use SCSS file for homepage styles if needed
+import GlobalStyles from '../../components/global-styles/GlobalStyles'; 
+import DeviceStyles from '../../components/device-styles/DeviceStyles'; 
+import PageWrapper from '../../components/page-wrapper/PageWrapper'; 
+import HeaderWrapper from '../../components/header/header-wrapper/HeaderWrapper'; 
+import HeroWrapper from './hero/HeroWrapper'; 
+import './HomePage.scss'; 
 
 const HomePage = () => {
   return (
@@ -12,9 +12,9 @@ const HomePage = () => {
       <GlobalStyles /> 
       <DeviceStyles /> 
       <PageWrapper>
-        <Header /> {/* This will render the header */}
+        <HeaderWrapper /> {/* Header that uses Logo and Menu */}
+        <HeroWrapper /> {/* Your hero section */}
         <h1>Hi. Welcome!</h1>
-        <HeroWrapper /> {/* Ensure this component is implemented */}
       </PageWrapper>
     </>
   );
