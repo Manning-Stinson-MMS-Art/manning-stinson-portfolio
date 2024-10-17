@@ -1,10 +1,10 @@
 import React from 'react';
-import './LogoWrapper.scss'; // Ensure this path is correct
+import './LogoWrapper.scss'; // Importing logo styles
 
 const LogoWrapper = () => {
   return (
     <div className="logo-wrapper">
-      <h1>Logo</h1> {/* Replace with actual logo image if needed */}
+      <h1>Logo</h1> {/* Replace with your actual logo or an image */}
     </div>
   );
 };
