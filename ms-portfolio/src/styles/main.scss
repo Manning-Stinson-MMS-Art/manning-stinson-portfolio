@@ -1,5 +1,12 @@
 /* src/styles/main.scss */
 @import './variables'; /* Import variables */
+@import './mixins'; /* Import mixins */
+@import './base'; /* Import base styles */
+@import './typography'; /* Import typography styles */
+@import './layout'; /* Import layout styles */
+@import 'font-awesome/css/font-awesome.min.css';
+
+
 
 /* Example styles */
 h1 {
