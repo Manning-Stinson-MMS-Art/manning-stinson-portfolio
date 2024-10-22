@@ -1,5 +1,33 @@
 /* src/styles/global.scss */
 
+// src/styles/base.scss
+
+@import './variables'; // Importing variables at the top
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+body {
+  font-family: 'Arial', sans-serif; /* Set the global font family */
+  background-color: $primary-bg; /* Background color using a variable */
+}
+
+h1 {
+  color: $primary-color; /* Set the color of h1 using a variable */
+}
+
+#root {
+  max-width: 1280px; /* Maximum width for the root element */
+  margin: 0 auto; /* Center the root element */
+  padding: 2rem; /* Add padding */
+  text-align: center; /* Center text within the root element */
+}
+
+
 /* Global styles */
 * {
   margin: 0;
