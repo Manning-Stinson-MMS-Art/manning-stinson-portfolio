@@ -1,13 +1,13 @@
-import React from "react";
-import LogoWrapper from "./logo-wrapper/LogoWrapper";
-import MenuWrapper from "./menu-wrapper/MenuWrapper";
-import "./HeaderWrapper.scss";
+// src/components/header/header-wrapper/HeaderWrapper.jsx
+import React from 'react';
+import { LogoWrapper, MenuWrapper, SocialIcons } from './'; // Assuming you're in the same directory
 
 const HeaderWrapper = () => {
   return (
     <header>
-      <LogoWrapper /> {/* Render the logo */}
-      <MenuWrapper /> {/* Render the menu */}
+      <LogoWrapper />
+      <MenuWrapper />
+      <SocialIcons />
     </header>
   );
 };

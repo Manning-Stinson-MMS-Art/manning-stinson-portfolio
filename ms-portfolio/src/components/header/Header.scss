@@ -1,0 +1,8 @@
+// src/header/header-wrapper/HeaderWrapper.scss
+.header {
+  display: flex;
+  justify-content: space-between; // Align items properly
+  align-items: center; // Center vertically
+  padding: 10px;
+  background-color: #f8f9fa; // Header background color
+}
