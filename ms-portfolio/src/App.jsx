@@ -1,9 +1,13 @@
 // src/App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from '@components/header/Header'; // Make sure this alias works correctly
-import Home from '@pages/home/Home'; // Correct usage of alias
-import Contact from '@pages/contact/Contact'; // Check this alias
+
+// Make sure this alias works correctly
+import Header from '@components/header/Header';
+// Correct usage of alias 
+import Home from '@pages/home/Home';
+// Check this alias 
+import Contact from '@pages/contact/Contact'; 
 
 const App = () => {
   return (
