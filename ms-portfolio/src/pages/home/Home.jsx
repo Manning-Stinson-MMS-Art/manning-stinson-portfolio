@@ -3,24 +3,23 @@ import React from 'react';
 import GlobalStyles from '@components/global-styles/GlobalStyles';
 import ResponsiveStyles from '@components/responsive-styles/Responsive-Styles';
 import PageWrapper from '@components/page-wrapper/PageWrapper';
-import Header from '@components/header/Header'; // Import the Header component
+import HomePageHeroWrapper from './HomePageHeroWrapper'; // Ensure this is defined
+import HeroHeaderImage from './HeroHeaderImage'; // Ensure this is defined
 
-
-const HomePage = () => {
-    console.log("HomePage component rendered.");
+const Home = () => { // Renamed from HomePage to Home
+    console.log("Home component rendered.");
 
     return (
         <>
             <GlobalStyles />
             <ResponsiveStyles />
             <PageWrapper>
-                <Header /> {/* Use the Header component here */}
                 <HomePageHeroWrapper />
-                <HeroHeaderImage /> {/* Render the new HeroHeaderImage component */}
+                <HeroHeaderImage />
                 <h1>Hi. Welcome!</h1>
             </PageWrapper>
         </>
     );
 };
 
-export default HomePage;
+export default Home; // Ensure the export matches
