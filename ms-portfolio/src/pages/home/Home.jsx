@@ -1,10 +1,11 @@
 // src/pages/home/Home.jsx
 import React from 'react';
+
 import GlobalStyles from '@components/global-styles/GlobalStyles';
 import ResponsiveStyles from '@components/responsive-styles/Responsive-Styles';
 import PageWrapper from '@components/page-wrapper/PageWrapper';
-import HomePageHeroWrapper from './HomePageHeroWrapper'; // Ensure this is defined
-import HeroHeaderImage from './HeroHeaderImage'; // Ensure this is defined
+import Header from '@components/header/Header'; // Import the Header component
+
 
 const Home = () => { // Renamed from HomePage to Home
     console.log("Home component rendered.");
@@ -14,8 +15,8 @@ const Home = () => { // Renamed from HomePage to Home
             <GlobalStyles />
             <ResponsiveStyles />
             <PageWrapper>
-                <HomePageHeroWrapper />
-                <HeroHeaderImage />
+                <Header /> {/* Render the Header component here */}
+                <HeroHeaderImage /> {/* Ensure this component is defined */}
                 <h1>Hi. Welcome!</h1>
             </PageWrapper>
         </>
