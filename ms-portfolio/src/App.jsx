@@ -1,5 +1,5 @@
 import React from "react";
-import Favicon from "react-favicon";
+
 
 const App = () => {
   return (
