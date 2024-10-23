@@ -1,6 +1,7 @@
 // src/header/Header.jsx
 import React from 'react';
 import HeaderWrapper from './header-wrapper/HeaderWrapper'; // Import only HeaderWrapper
+import './Header.scss';
 
 const Header = () => {
   return (
