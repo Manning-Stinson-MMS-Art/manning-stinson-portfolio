@@ -6,8 +6,12 @@ const SocialIcons = () => {
   return (
     <div className="social-icons">
       {/* Add your social icon links here */}
-      <a href="https://twitter.com">Twitter</a>
-      <a href="https://github.com">GitHub</a>
+      <a href="https://twitter.com"></a>
+      <a href="https://github.com"></a>
+      <a href="https://facebook.com"></a>
+      <a href="https://linkedin.com"></a>
+      <a href="https://instagram.com"></a>
+      < a href = "https://pinterest.com" > </a>
       {/* Add more social icons as needed */}
     </div>
   );
