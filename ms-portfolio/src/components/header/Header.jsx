@@ -1,14 +1,11 @@
 // src/header/Header.jsx
 import React from 'react';
-import HeaderWrapper from './header-wrapper/HeaderWrapper'; // Import only HeaderWrapper
-import './Header.scss';
+import HeaderWrapper from './header-wrapper/HeaderWrapper'; // Import HeaderWrapper
+import './Header.scss'; // Import styles for the Header
 
 const Header = () => {
   return (
-    <HeaderWrapper>
-      {/* Now the individual components are rendered inside HeaderWrapper */}
-      {/* HeaderWrapper should already include these components */}
-    </HeaderWrapper>
+    <HeaderWrapper />
   );
 };
 
