@@ -1,7 +1,6 @@
 // src/App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from '@components/header/Header'; 
 import Home from '@pages/home/Home'; // Keep as Home
 import Contact from '@pages/contact/Contact'; 
 

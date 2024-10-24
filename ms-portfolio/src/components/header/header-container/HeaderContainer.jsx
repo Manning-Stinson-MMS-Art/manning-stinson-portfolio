@@ -1,9 +1,8 @@
 // src/header/header-wrapper/HeaderWrapper.jsx
 import React from 'react';
-import { LogoWrapper, MenuWrapper, SocialIcons } from './'; // Ensure these components are defined and imported correctly
-import './HeaderWrapper.scss'; // Import the styles for the HeaderWrapper
+import { LogoWrapper, MenuWrapper, SocialIcons } from '.'; // Ensure these components are defined and imported correctly
 
-const HeaderWrapper = () => {
+const HeaderContainer = () => {
   return (
     <header className="header"> {/* Apply the .header class here */}
       <LogoWrapper /> {/* Logo component */}
@@ -13,4 +12,4 @@ const HeaderWrapper = () => {
   );
 };
 
-export default HeaderWrapper;
+export default HeaderContainer;
