@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import LogoWrapper from './header-container/logo-wrapper/LogoWrapper';
-import MenuWrapper from './header-container/menu-wrapper/MenuWrapper';
-import NavWrapper from './header-container/nav-wrapper/NavWrapper';
-import SocialIcons from './header-container/social-icons-wrapper/SocialIcons';
+import LogoWrapper from './logo-wrapper/LogoWrapper';
+import MenuWrapper from './menu-wrapper/MenuWrapper';
+import NavWrapper from './nav-wrapper/NavWrapper';
+import SocialIcons from './social-icons-wrapper/SocialIcons';
 import './HeaderContainer.scss';
 
 const HeaderContainer = () => {
