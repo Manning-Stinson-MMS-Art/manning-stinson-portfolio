@@ -6,6 +6,7 @@ const HeaderContainer = () => {
   return (
     <header className="header"> {/* Apply the .header class here */}
       <LogoWrapper /> {/* Logo component */}
+      <NavWrapper /> {/* Nav component */}
       <MenuWrapper /> {/* Menu component */}
       <SocialIcons /> {/* Social icons component */}
     </header>

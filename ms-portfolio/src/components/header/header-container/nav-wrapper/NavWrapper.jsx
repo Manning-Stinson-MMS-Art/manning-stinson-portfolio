@@ -1,10 +1,9 @@
 // src/header/header-wrapper/menu-wrapper/MenuWrapper.jsx
 import React from 'react';
-import './MenuWrapper.scss'; // Styles for MenuWrapper
-
-const MenuWrapper = () => {
+import './NavWrapper.scss';
+const NavWrapper = () => {
   return (
-    <nav className="menu-wrapper">
+    <nav className="nav-wrapper">
       {/* Menu items go here */}
       <ul>
         <li>Home</li>
@@ -16,4 +15,4 @@ const MenuWrapper = () => {
   );
 };
 
-export default MenuWrapper;
+export default NavWrapper;
