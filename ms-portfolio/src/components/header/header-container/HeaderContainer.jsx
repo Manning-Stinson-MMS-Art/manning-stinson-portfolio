@@ -1,18 +1,37 @@
-// src/components/header/header-container/HeaderContainer.jsx
-import React from 'react';
-import LogoWrapper from './logo-wrapper/LogoWrapper';  // Remove curly braces
-import NavWrapper from './nav-wrapper/NavWrapper';     // Remove curly braces
-import MenuWrapper from './menu-wrapper/MenuWrapper';  // Remove curly braces
-import SocialIcons from './social-icons-wrapper/SocialIcons';  // Remove curly braces
+import React, { useState, useEffect } from 'react';
+import LogoWrapper from './header-container/logo-wrapper/LogoWrapper';
+import MenuWrapper from './header-container/menu-wrapper/MenuWrapper';
+import NavWrapper from './header-container/nav-wrapper/NavWrapper';
+import SocialIcons from './header-container/social-icons-wrapper/SocialIcons';
 import './HeaderContainer.scss';
 
 const HeaderContainer = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Prevent scrolling when mobile menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMenuOpen]);
+
   return (
-    <header className="header">
+    <header className="header-container">
       <LogoWrapper />
-      <NavWrapper />
-      <MenuWrapper />
-      <SocialIcons />
+      <div className="desktop-nav">
+        <NavWrapper />
+        <SocialIcons />
+      </div>
+      <MenuWrapper 
+        isOpen={isMenuOpen} 
+        onToggle={() => setIsMenuOpen(!isMenuOpen)} 
+      />
     </header>
   );
 };

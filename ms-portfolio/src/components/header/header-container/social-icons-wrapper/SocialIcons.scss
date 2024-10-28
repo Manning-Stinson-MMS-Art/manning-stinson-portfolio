@@ -1,0 +1,18 @@
+.social-icons-wrapper {
+  display: flex;
+  gap: 1.5rem;
+  
+  a {
+    color: #fff;
+    font-size: 1.25rem;
+    transition: opacity 0.3s ease;
+    
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
