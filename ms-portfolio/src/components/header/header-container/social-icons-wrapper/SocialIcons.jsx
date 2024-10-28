@@ -1,18 +1,26 @@
-// src/header/header-wrapper/SocialIcons.jsx
 import React from 'react';
-import './SocialIcons.scss'; // Add your styles here
+import './SocialIcons.scss';
 
 const SocialIcons = () => {
+  const socialLinks = [
+    { platform: 'twitter', url: 'https://twitter.com/yourusername', icon: '🐦' },
+    { platform: 'linkedin', url: 'https://linkedin.com/in/yourusername', icon: 'in' },
+    { platform: 'facebook', url: 'https://facebook.com/yourusername', icon: 'f' },
+    { platform: 'instagram', url: 'https://instagram.com/yourusername', icon: '📷' }
+  ];
+
   return (
-    <div className="social-icons">
-      {/* Add your social icon links here */}
-      <a href="https://twitter.com"></a>
-      <a href="https://github.com"></a>
-      <a href="https://facebook.com"></a>
-      <a href="https://linkedin.com"></a>
-      <a href="https://instagram.com"></a>
-      < a href = "https://pinterest.com" > </a>
-      {/* Add more social icons as needed */}
+    <div className="social-icons-wrapper">
+      {socialLinks.map((social) => (
+        <a 
+          key={social.platform}
+          href={social.url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {social.icon}
+        </a>
+      ))}
     </div>
   );
 };
