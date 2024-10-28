@@ -1,18 +1,13 @@
-// src/header/header-wrapper/menu-wrapper/MenuWrapper.jsx
+// NavWrapper.jsx
 import React from 'react';
 import './NavWrapper.scss';
+
 const NavWrapper = () => {
   return (
-    <nav className="nav-wrapper">
-      {/* Menu items go here */}
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Portfolio</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
+    <div className="nav-wrapper">
+      Nav Here
+    </div>
   );
 };
 
-export default NavWrapper;
+export default NavWrapper;  // Make sure this is default export

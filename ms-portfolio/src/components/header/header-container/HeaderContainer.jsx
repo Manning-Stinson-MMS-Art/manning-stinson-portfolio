@@ -1,14 +1,18 @@
-// src/header/header-wrapper/HeaderWrapper.jsx
+// src/components/header/header-container/HeaderContainer.jsx
 import React from 'react';
-import { LogoWrapper, MenuWrapper, SocialIcons } from '.'; // Ensure these components are defined and imported correctly
+import LogoWrapper from './logo-wrapper/LogoWrapper';  // Remove curly braces
+import NavWrapper from './nav-wrapper/NavWrapper';     // Remove curly braces
+import MenuWrapper from './menu-wrapper/MenuWrapper';  // Remove curly braces
+import SocialIcons from './social-icons-wrapper/SocialIcons';  // Remove curly braces
+import './HeaderContainer.scss';
 
 const HeaderContainer = () => {
   return (
-    <header className="header"> {/* Apply the .header class here */}
-      <LogoWrapper /> {/* Logo component */}
-      <NavWrapper /> {/* Nav component */}
-      <MenuWrapper /> {/* Menu component */}
-      <SocialIcons /> {/* Social icons component */}
+    <header className="header">
+      <LogoWrapper />
+      <NavWrapper />
+      <MenuWrapper />
+      <SocialIcons />
     </header>
   );
 };

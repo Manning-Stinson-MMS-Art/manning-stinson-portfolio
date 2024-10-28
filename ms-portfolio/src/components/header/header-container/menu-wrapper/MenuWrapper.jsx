@@ -1,13 +1,13 @@
-// src/components/header/menu-wrapper/MenuWrapper.jsx
+// SocialIcons.jsx
 import React from 'react';
-import './MenuWrapper.scss';
+import './SocialIcons.scss';
 
-const MenuWrapper = () => {
+const SocialIcons = () => {
   return (
-    <div className="menu-wrapper">
-      {/* Menu content */}
+    <div className="social-icons">
+      Social Icons Here
     </div>
   );
 };
 
-export default MenuWrapper;
+export default SocialIcons;  // Make sure this is default export

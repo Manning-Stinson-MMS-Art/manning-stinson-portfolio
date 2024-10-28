@@ -1,23 +1,33 @@
+// vite.config.js
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import svgr from 'vite-plugin-svgr';
-import path from 'path'; // Required for resolving paths
+import path from 'path';
 
 export default defineConfig({
-  plugins: [react(), svgr()], // Use svgr plugin for SVG handling
+  plugins: [react(), svgr()],
   build: {
-    outDir: 'dist',           // Specify output directory for build
-    emptyOutDir: true,        // Clears the output directory before building
+    outDir: 'dist',
+    emptyOutDir: true,
   },
   server: {
-    port: 8080,               // Set the port for development server
+    port: 8080,
   },
   resolve: {
     alias: {
       '@components': path.resolve(__dirname, 'src/components'),
       '@styles': path.resolve(__dirname, 'src/styles'),
-      '@pages': path.resolve(__dirname, 'src/pages'), // New alias for pages
-
+      '@pages': path.resolve(__dirname, 'src/pages'),
+    },
+  },
+  css: {  // Add this CSS configuration
+    preprocessorOptions: {
+      scss: {
+        additionalData: `
+          @import "@styles/variables.scss";
+          @import "@styles/mixins.scss";
+        `,
+      },
     },
   },
 });

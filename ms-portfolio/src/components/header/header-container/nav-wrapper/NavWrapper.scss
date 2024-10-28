@@ -1,35 +1,4 @@
-// Menu Styles
-.menu-wrapper {
-  display: flex;
-  align-items: center;
-
-  .menu {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-
-    li {
-      margin: 0 15px;
-
-      a {
-        color: #fff;
-        text-decoration: none;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-
-  .social-media-icons {
-    margin-left: 20px;
-
-    a {
-      color: #fff;
-      margin-left: 10px;
-      font-size: 18px;
-    }
-  }
+.nav-wrapper {
+  display: block;
+  padding: 10px;
 }

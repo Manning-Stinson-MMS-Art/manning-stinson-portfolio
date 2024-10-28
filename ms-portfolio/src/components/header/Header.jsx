@@ -1,12 +1,10 @@
-// src/header/Header.jsx
+// src/components/header/Header.jsx - This is correct
 import React from 'react';
-import HeaderContainer from './header-container/HeaderContainer'; // Import the HeaderContainer component
-import './Header.scss'; // Import styles for the Header
+import HeaderContainer from './header-container/HeaderContainer';
+import './Header.scss';
 
 const Header = () => {
-  return (
-    <HeaderContainer />
-  );
+  return <HeaderContainer />;
 };
 
 export default Header;

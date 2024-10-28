@@ -1,12 +1,13 @@
-// src/components/header/logo-wrapper/LogoWrapper.jsx
+// LogoWrapper.jsx
 import React from 'react';
+import './LogoWrapper.scss';
 
 const LogoWrapper = () => {
   return (
-    <div>
-      <img src="path/to/logo.png" alt="Logo" />
+    <div className="logo-wrapper">
+      Logo Here
     </div>
   );
 };
 
-export default LogoWrapper; // Ensure this export statement is correct
+export default LogoWrapper;  // Make sure this is default export
