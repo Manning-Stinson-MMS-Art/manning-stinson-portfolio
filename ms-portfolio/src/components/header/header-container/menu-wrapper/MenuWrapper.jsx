@@ -16,7 +16,6 @@ const MenuWrapper = ({ isOpen, onToggle }) => {
       <div className={`mobile-menu ${isOpen ? 'open' : ''}`}>
         <nav className="mobile-nav">
           <a href="/about">about</a>
-          <a href="/book">book</a>
           <a href="/portfolio">portfolio</a>
           <a href="/blog">blog</a>
           <a href="/contact">contact</a>

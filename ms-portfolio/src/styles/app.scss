@@ -1,0 +1,14 @@
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-top: 80px; // Adjust this value based on your header height
+  text-align: center;
+}

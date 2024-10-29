@@ -1,26 +1,33 @@
-@import './variables'; // Importing variables at the top
+@import './variables';
 
 /* Global styles */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Arial', sans-serif; /* Set the global font family */
-  background-color: $primary-bg; /* Background color using a variable */
+  font-family: 'Arial', sans-serif;
+  background-color: $primary-bg;
 }
 
 h1 {
-  color: $primary-color; /* Set the color of h1 using a variable */
+  color: $primary-color;
 }
 
 #root {
-  max-width: 1280px; /* Maximum width for the root element */
-  margin: 0 auto; /* Center the root element */
-  padding: 2rem; /* Add padding */
-  text-align: center; /* Center text within the root element */
+  // Remove the max-width for the header to extend fully
+  width: 100%;
+  margin: 0; // Changed from margin: 0 auto
+  padding: 0; // Remove default padding
+  text-align: center;
+
+  // If you want to keep the original styles for main content
+  // You can create a main container inside root
+  .main-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
 }
-
-

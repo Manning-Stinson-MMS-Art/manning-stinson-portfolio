@@ -3,10 +3,10 @@ import './SocialIcons.scss';
 
 const SocialIcons = () => {
   const socialLinks = [
-    { platform: 'twitter', url: 'https://twitter.com/yourusername', icon: '🐦' },
+    { platform: 'twitter', url: 'https://twitter.com/yourusername', icon: 't' },
     { platform: 'linkedin', url: 'https://linkedin.com/in/yourusername', icon: 'in' },
     { platform: 'facebook', url: 'https://facebook.com/yourusername', icon: 'f' },
-    { platform: 'instagram', url: 'https://instagram.com/yourusername', icon: '📷' }
+    { platform: 'instagram', url: 'https://instagram.com/yourusername', icon: 'IG' }
   ];
 
   return (

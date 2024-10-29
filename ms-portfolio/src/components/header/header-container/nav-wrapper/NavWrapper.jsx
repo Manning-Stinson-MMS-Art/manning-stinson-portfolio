@@ -4,7 +4,6 @@ import './NavWrapper.scss';
 const NavWrapper = () => {
   const navItems = [
     { text: 'about', path: '/about' },
-    { text: 'book', path: '/book' },
     { text: 'portfolio', path: '/portfolio' },
     { text: 'blog', path: '/blog' },
     { text: 'contact', path: '/contact' }

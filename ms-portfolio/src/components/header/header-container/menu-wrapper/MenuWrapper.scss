@@ -39,7 +39,7 @@
 }
 
 .mobile-menu {
-  background-color: #000;
+  background-color: #fafafa;
   height: 100vh;
   left: 0;
   opacity: 0;
@@ -64,7 +64,7 @@
     padding: 20px;
 
     a {
-      color: #fff;
+      color:$link-primary;
       font-size: 1.5rem;
       margin: 10px 0;
       text-decoration: none;
@@ -84,7 +84,7 @@
     padding: 20px;
 
     a {
-      color: #fff;
+      color: #333;
       text-decoration: none;
       transition: opacity 0.3s ease;
 
