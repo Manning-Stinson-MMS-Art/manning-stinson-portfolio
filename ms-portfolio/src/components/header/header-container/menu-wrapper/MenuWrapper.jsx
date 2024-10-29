@@ -1,3 +1,4 @@
+// MenuWrapper.jsx
 import React from 'react';
 import './MenuWrapper.scss';
 
@@ -21,10 +22,10 @@ const MenuWrapper = ({ isOpen, onToggle }) => {
           <a href="/contact">contact</a>
         </nav>
         <div className="mobile-social">
-          <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">twitter</a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">linkedin</a>
-          <a href="https://facebook.com/yourusername" target="_blank" rel="noopener noreferrer">facebook</a>
-          <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer">instagram</a>
+          <a href="https://github.com/manningstinson" target="_blank" rel="noopener noreferrer">github</a>
+          <a href="https://linkedin.com/in/manningstinson" target="_blank" rel="noopener noreferrer">linkedin</a>
+          <a href="https://facebook.com/manningstinson" target="_blank" rel="noopener noreferrer">facebook</a>
+          <a href="https://instagram.com/mmsartwork" target="_blank" rel="noopener noreferrer">instagram</a>
         </div>
       </div>
     </div>

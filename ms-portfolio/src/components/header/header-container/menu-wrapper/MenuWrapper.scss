@@ -15,7 +15,18 @@
   gap: 6px;
   padding: 10px;
   z-index: 1000;
+  position: fixed;  // Change to fixed
+  top: 1rem;       // Position from top
+  right: 2rem;     // Position from right
 
+  position: absolute;
+
+   @media (max-width: 768px) {
+    position: fixed;  // Only becomes fixed on mobile
+    top: 1rem;
+    right: 2rem;
+  }
+  
   span {
     background-color: #fff;
     height: 2px;
@@ -25,6 +36,7 @@
 
   &.open {
     span {
+      background-color: #333;
       &:first-child {
         transform: translateY(8px) rotate(45deg);
       }
@@ -53,6 +65,9 @@
   &.open {
     opacity: 1;
     transform: translateX(0);
+    span {
+      background-color: #333;
+    }
   }
 
   .mobile-nav {
@@ -64,7 +79,7 @@
     padding: 20px;
 
     a {
-      color:$link-primary;
+      color: $link-primary;
       font-size: 1.5rem;
       margin: 10px 0;
       text-decoration: none;
@@ -73,20 +88,24 @@
 
       &:hover {
         opacity: 0.8;
+        text-decoration: underline;
       }
     }
   }
 
-  .mobile-social {
+ .mobile-social {
     display: flex;
     justify-content: center;
     gap: 20px;
     padding: 20px;
+    margin-top: -60px; // This moves them up closer to menu links
 
     a {
       color: #333;
       text-decoration: none;
       transition: opacity 0.3s ease;
+      font-size: 1rem; // Smaller text size (changed from 1.5rem)
+      text-transform: lowercase; // Optional: to match menu style
 
       &:hover {
         opacity: 0.8;

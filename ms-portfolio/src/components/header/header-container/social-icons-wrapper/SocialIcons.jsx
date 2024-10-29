@@ -2,27 +2,51 @@ import React from 'react';
 import './SocialIcons.scss';
 
 const SocialIcons = () => {
-  const socialLinks = [
-    { platform: 'twitter', url: 'https://twitter.com/yourusername', icon: 't' },
-    { platform: 'linkedin', url: 'https://linkedin.com/in/yourusername', icon: 'in' },
-    { platform: 'facebook', url: 'https://facebook.com/yourusername', icon: 'f' },
-    { platform: 'instagram', url: 'https://instagram.com/yourusername', icon: 'IG' }
-  ];
+    const socialLinks = [
+        {
+            platform: 'github',
+            url: 'https://github.com/manningstinson',
+            iconClass: 'fa-brands fa-github',
+            color: '#fff'
+        },
+        {
+            platform: 'linkedin',
+            url: 'https://linkedin.com/in/manningstinson',
+            iconClass: 'fa-brands fa-linkedin',
+            color: '#fff'
+        },
+        {
+            platform: 'facebook',
+            url: 'https://facebook.com/manningstinsonartworks',
+            iconClass: 'fa-brands fa-facebook',
+            color: '#fff'
+        },
+        {
+            platform: 'instagram',
+            url: 'https://instagram.com/mms_artworks',
+            iconClass: 'fa-brands fa-instagram',
+            color: '#fff'
+        }
+    ];
 
-  return (
-    <div className="social-icons-wrapper">
-      {socialLinks.map((social) => (
-        <a 
-          key={social.platform}
-          href={social.url}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {social.icon}
-        </a>
-      ))}
-    </div>
-  );
+    return (
+        <div className="flex items-center">
+            {socialLinks.map((social) => {
+                return (
+                    <a
+                        key={social.platform}
+                        href={social.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-2xl hover:opacity-80 transition-opacity duration-200"
+                        style={{ color: social.color, marginRight: '.5rem' }}  // Added marginRight here
+                    >
+                        <i className={social.iconClass}></i>
+                    </a>
+                );
+            })}
+        </div>
+    );
 };
 
 export default SocialIcons;
