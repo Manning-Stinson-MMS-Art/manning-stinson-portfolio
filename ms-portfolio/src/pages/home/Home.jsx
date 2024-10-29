@@ -3,6 +3,8 @@ import PageWrapper from '@components/page-wrapper/PageWrapper';
 import Header from '@components/header/Header';
 import Footer from '@components/footer/Footer';
 
+
+
 const Home = () => {
   console.log("Home component rendered.");
   return (

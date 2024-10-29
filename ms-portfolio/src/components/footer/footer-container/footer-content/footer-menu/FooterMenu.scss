@@ -1,0 +1,14 @@
+.footer-menu {
+  display: flex;
+  gap: 20px;          /* Spacing between menu items */
+}
+
+.footer-menu a {
+  color: #333;        /* Link color to match your existing footer */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-menu a:hover {
+  color: #666;        /* Optional hover color for links */
+}

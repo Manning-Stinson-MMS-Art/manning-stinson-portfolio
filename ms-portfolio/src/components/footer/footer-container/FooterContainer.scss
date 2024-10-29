@@ -1,16 +1,9 @@
-// src/components/footer/footer-container/FooterContainer.scss
 .footer-container {
-  background-color: #333;
-  color: #fff;
-  padding: 2rem;
+  max-width: 1200px;  /* Ensure footer content has a max width to center-align with the header */
+  margin: 0 auto;
+  padding: 0 20px;    /* Adds side padding if needed */
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  // Styles for the overall footer container
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    text-align: center;
-  }
+  flex-wrap: wrap;    /* Makes the footer responsive by wrapping content */
 }
