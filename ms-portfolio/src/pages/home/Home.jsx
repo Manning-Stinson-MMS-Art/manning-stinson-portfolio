@@ -1,7 +1,7 @@
-// src/pages/home/Home.jsx
 import React from 'react';
 import PageWrapper from '@components/page-wrapper/PageWrapper';
 import Header from '@components/header/Header';
+import Footer from '@components/footer/Footer';
 
 const Home = () => {
   console.log("Home component rendered.");
@@ -9,7 +9,10 @@ const Home = () => {
     <>
       <PageWrapper>
         <Header />
-        <h1>Hi. Welcome!</h1>
+        <main>
+          {/* Add your main content here */}
+        </main>
+        <Footer />
       </PageWrapper>
     </>
   );
