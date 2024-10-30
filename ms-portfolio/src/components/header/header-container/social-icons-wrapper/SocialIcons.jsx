@@ -26,7 +26,20 @@ const SocialIcons = () => {
             url: 'https://instagram.com/mms_artworks',
             iconClass: 'fa-brands fa-instagram',
             color: '#fff'
-        }
+        },
+
+        {
+            platform: 'pinterest',
+            url: 'https://pinterest.com/manningstinson',
+            iconClass: 'fa-brands fa-pinterest',
+            color: '#fff'
+        }  
+
+
+
+
+
+
     ];
 
     return (
