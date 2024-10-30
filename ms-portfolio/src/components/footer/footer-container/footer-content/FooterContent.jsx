@@ -6,8 +6,10 @@ import FooterCopyright from './footer-copyright/FooterCopyright';
 const FooterContent = () => {
   return (
     <div className="footer-content">
-      <FooterMenu />
+      
       <FooterCopyright />
+      <FooterMenu />
+      
     </div>
   );
 };

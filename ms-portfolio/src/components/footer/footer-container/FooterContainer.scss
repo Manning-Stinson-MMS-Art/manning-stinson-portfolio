@@ -1,9 +1,20 @@
+/* footer-container */
 .footer-container {
-  max-width: 1200px;  /* Ensure footer content has a max width to center-align with the header */
-  margin: 0 auto;
-  padding: 0 20px;    /* Adds side padding if needed */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;    /* Makes the footer responsive by wrapping content */
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px; /* Remove this if you have a parent container handling padding */
+}
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        justify-content: center;
+        padding: 15px 0;
+    }
 }

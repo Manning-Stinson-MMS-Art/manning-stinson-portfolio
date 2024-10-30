@@ -1,5 +1,13 @@
+/* footer-copyright */
+/* footer-copyright */
 .footer-copyright {
-  font-size: 0.9rem;
-  color: #666;
-  margin-top: 10px;
+    color: #666;
+    font-size: 14px;
+    width: auto; /* or you can omit this as it's the default */
+    white-space: nowrap; /* This prevents wrapping if space gets tight */
+}
+@media screen and (max-width: 768px) {
+    .footer-copyright {
+        font-size: 12px;
+    }
 }

@@ -1,5 +1,14 @@
+
 .footer-content {
-  display: flex;
-  gap: 30px;          /* Space between menu items */
-  align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1; /* This makes the content take up remaining space */
+    min-width: 0; /* This helps prevent overflow issues */
+    padding-top: 1vh;
+}
+@media screen and (max-width: 768px) {
+    .footer-content {
+        display: none;
+    }
 }
