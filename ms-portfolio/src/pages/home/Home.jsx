@@ -1,23 +1,14 @@
 import React from 'react';
-import PageWrapper from '@components/page-wrapper/PageWrapper';
-import Header from '@components/header/Header';
-import Footer from '@components/footer/Footer';
-
-
+import Layout from '@components/layout/Layout';
 
 const Home = () => {
-  console.log("Home component rendered.");
-  return (
-    <>
-      <PageWrapper>
-        <Header />
-        <main>
-          {/* Add your main content here */}
-        </main>
-        <Footer />
-      </PageWrapper>
-    </>
-  );
+ return (
+   <Layout>
+     <main>
+       {/* Add your main content here */}
+     </main>
+   </Layout>
+ );
 };
 
 export default Home;
