@@ -37,12 +37,6 @@ export default defineConfig({
           @import "@styles/typography.scss";
           @import "@styles/utilities.scss";
           @import "@styles/animations.scss";
-          @import "@styles/device-styles/x-small.scss";
-          @import "@styles/device-styles/small.scss";
-          @import "@styles/device-styles/medium.scss";
-          @import "@styles/device-styles/large.scss";
-          @import "@styles/device-styles/x-large.scss";
-          @import "@styles/device-styles/ultra-wide.scss";
         `,
       },
     },
