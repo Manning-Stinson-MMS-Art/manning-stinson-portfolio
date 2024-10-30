@@ -1,14 +1,24 @@
+// utilities.scss
+@mixin container {
+ width: 100%;
+ margin: 0 auto;
+ padding: 0 1rem;
+ max-width: 1248px;
+}
+
+// app.scss
 .app-container {
-  width: 100%;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
+ @include container;
+ min-height: 100vh;
 }
 
 .main-content {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  padding-top: 80px; // Adjust this value based on your header height
-  text-align: center;
+ @include container;
+ padding-top: 80px; // For header height
+ text-align: center;
+
+ @include small {
+   padding-top: 60px; // Adjust for smaller header on mobile
+   padding: 1rem;
+ }
 }
