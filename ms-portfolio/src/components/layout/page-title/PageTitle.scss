@@ -1,0 +1,23 @@
+// PageTitle.scss
+.page-title-container {
+  @include container;
+  padding: 3rem 1rem;
+  
+  @include small {
+    padding: 2rem 1rem;
+  }
+}
+
+.page-title {
+  @include page-title-font;
+  color: $primary-color;
+}
+
+.page-description {
+  margin-top: .5rem;
+  color: $secondary-color;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,5 +1,10 @@
+
 .footer {
-  background-color: #f5f5f5; /* Keeps your existing background color */
-  color: #333;               /* Existing text color */
-  font-family: 'YourHeaderFont', sans-serif; /* Match the font family of the header */
+  background-color: $footer-bg;
+  color: $text-color;
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  max-width: 1200px; // Optional max width for footer content
+  padding: $spacing-medium; // Inner padding using the medium spacing variable
 }
+
