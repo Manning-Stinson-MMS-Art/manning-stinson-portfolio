@@ -2,7 +2,9 @@
 .page-title-container {
   @include container;
   padding: 3rem 1rem;
-  
+  background-color: #fff;
+
+
   @include small {
     padding: 2rem 1rem;
   }

@@ -1,10 +1,16 @@
-
 .footer {
-  background-color: $footer-bg;
-  color: $text-color;
-  font-family: 'Open Sans', sans-serif;
-  width: 100%;
-  max-width: 1200px; // Optional max width for footer content
-  padding: $spacing-medium; // Inner padding using the medium spacing variable
+    background-color: #fff;
+    color: $text-color;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%; /* Use 100% instead of 100vw */
+    margin: 0;
+    padding: $spacing-medium;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    box-sizing: border-box;
+    /* Alternatively, try this if there are issues with margins */
+    /* margin-left: calc(-50% + 50vw); margin-right: calc(-50% + 50vw); */
 }
-
