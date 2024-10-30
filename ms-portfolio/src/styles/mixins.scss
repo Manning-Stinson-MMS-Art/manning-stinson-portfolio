@@ -1,61 +1,13 @@
+// mixins.scss
+@import './device-styles';
+@import './animations';
+@import './utilities';
+@import './typography';
 
-/* Device Breakpoint Mixins
-–––––––––––––––––––––––––––––––––––––––––––––– */
-@mixin x-small {
- @media (max-width: 480px) { @content; }
-}
-
-@mixin small {
- @media (min-width: 481px) and (max-width: 768px) { @content; }
-}
-
-@mixin medium {
- @media (min-width: 769px) and (max-width: 1024px) { @content; }
-}
-
-@mixin large {
- @media (min-width: 1025px) and (max-width: 1200px) { @content; }
-}
-
-@mixin x-large {
- @media (min-width: 1201px) and (max-width: 1440px) { @content; }
-}
-
-@mixin ultra-wide {
- @media (min-width: 1441px) { @content; }
-}
-
-/* Mobile First Breakpoints
-–––––––––––––––––––––––––––––––––––––––––––––– */
-@mixin min-small {
- @media (min-width: 481px) { @content; }
-}
-
-@mixin min-medium {
- @media (min-width: 769px) { @content; }
-}
-
-@mixin min-large {
- @media (min-width: 1025px) { @content; }
-}
-
-/* Utility Mixins
-–––––––––––––––––––––––––––––––––––––––––––––– */
-@mixin flex-center {
- display: flex;
- justify-content: center;
- align-items: center;
-}
-
-@mixin flex-between {
- display: flex;
- justify-content: space-between;
- align-items: center;
-}
-
-@mixin container {
- width: 100%;
- margin: 0 auto;
- padding: 0 1rem;
- max-width: 1248px;
+// Only add mixins here that don't clearly fit in other categories
+// Or mixins that combine multiple other mixins
+@mixin component-wrapper {
+  @include container;
+  @include flex-center;
+  @include smooth-transition;
 }

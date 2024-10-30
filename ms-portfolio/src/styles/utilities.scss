@@ -1,0 +1,21 @@
+
+/* Utility Mixins
+–––––––––––––––––––––––––––––––––––––––––––––– */
+@mixin flex-center {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+@mixin flex-between {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+@mixin container {
+ width: 100%;
+ margin: 0 auto;
+ padding: 0 1rem;
+ max-width: 1248px;
+}
