@@ -4,13 +4,11 @@ import PageWrapper from '@components/page-wrapper/PageWrapper'
 
 const Layout = ({ children }) => {
  return (
-   <>
+   <PageWrapper>
      <Header />
-     <PageWrapper>
-       {children} 
-     </PageWrapper>
+     {children}
      <Footer />
-   </>
+   </PageWrapper>
  )
 }
 

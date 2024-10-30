@@ -13,6 +13,7 @@ const App = () => {
           <Route path="/" element={<Home />} /> // This will use the Home component
           <Route path="/contact" element={<Contact />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/blog" element={<Blog />} />
         </Routes>
       </div>
     </Router>

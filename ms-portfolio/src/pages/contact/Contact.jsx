@@ -1,7 +1,13 @@
+// Contact.jsx
 import React from 'react';
+import Layout from '@components/layout/Layout';
 
 const Contact = () => {
-  return <div>Contact Page</div>;
+  return (
+    <Layout>
+      <div>Contact Page</div>
+    </Layout>
+  );
 };
 
 export default Contact;
