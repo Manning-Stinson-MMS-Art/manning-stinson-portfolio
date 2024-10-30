@@ -1,13 +1,10 @@
-/* footer-copyright */
-/* footer-copyright */
 .footer-copyright {
-    color: #666;
-    font-size: 14px;
-    width: auto; /* or you can omit this as it's the default */
-    white-space: nowrap; /* This prevents wrapping if space gets tight */
-}
-@media screen and (max-width: 768px) {
-    .footer-copyright {
-        font-size: 12px;
-    }
+ color: #666;
+ font-size: 14px;
+ width: auto;
+ white-space: nowrap;
+ 
+ @include small {
+   font-size: 12px;
+ }
 }

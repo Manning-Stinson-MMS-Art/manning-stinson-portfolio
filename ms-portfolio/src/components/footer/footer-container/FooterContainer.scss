@@ -1,20 +1,11 @@
-/* footer-container */
 .footer-container {
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid #fff;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-    padding: 0 20px; /* Remove this if you have a parent container handling padding */
-}
-
-@media screen and (max-width: 768px) {
-    .footer-container {
-        justify-content: center;
-        padding: 15px 0;
-    }
+ @include flex-between;
+ @include container; // Uses the container mixin we defined
+ border-top: 1px solid #fff;
+ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+ 
+ @include small {
+   justify-content: center;
+   padding: 15px 0;
+ }
 }
