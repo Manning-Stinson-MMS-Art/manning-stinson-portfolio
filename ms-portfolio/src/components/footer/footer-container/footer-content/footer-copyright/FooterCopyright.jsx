@@ -1,4 +1,3 @@
-import React from 'react';
 import './FooterCopyright.scss';
 
 const FooterCopyright = () => {

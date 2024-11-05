@@ -7,8 +7,8 @@ const Portfolio = () => {
   return (
     <Layout 
       pageTitle="Portfolio" 
-      pageDescription="A collection of my creative work and projects"
-    >
+      pageDescription="anomaly">
+  
       <main className="portfolio-container">
         {/* Portfolio content */}
       </main>
