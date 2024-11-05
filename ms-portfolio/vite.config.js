@@ -24,7 +24,8 @@ export default defineConfig({
    preprocessorOptions: {
      scss: {
        additionalData: `
-         @import "@styles/variables.scss";
+       @import "@styles/tailwind.css";  
+       @import "@styles/variables.scss";
          @import "@styles/mixins.scss";
          @import "@styles/reset.scss";
          @import "@styles/base.scss";

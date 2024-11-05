@@ -14,11 +14,12 @@
 
 .main-content {
  @include container;
- padding-top: 80px; // For header height
+
+ // For header height
+ padding-top: 80px; 
  text-align: center;
 
  @include small {
-   padding-top: 60px; // Adjust for smaller header on mobile
    padding: 1rem;
  }
 }

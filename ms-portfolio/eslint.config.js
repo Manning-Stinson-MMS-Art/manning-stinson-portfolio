@@ -12,7 +12,7 @@ export default [
       ecmaVersion: 2020,
       globals: {
         ...globals.browser,
-        ...globals.node, // Add Node globals here
+        ...globals.node,
       },
       parserOptions: {
         ecmaVersion: 'latest',
@@ -38,9 +38,15 @@ export default [
       ],
       'no-unused-vars': [
         'warn',
-        { varsIgnorePattern: 'React' }, // Ignores unused React import warning
+        { varsIgnorePattern: 'React' },
       ],
-      'react/prop-types': 'off', // Disables prop-types validation for children
+      'react/prop-types': 'off',
+    },
+  },
+  {
+    files: ['**/*.css', '**/*.scss'], // Ignore CSS and SCSS files in ESLint
+    rules: {
+      'no-use-before-define': 'off', // You can customize as needed
     },
   },
 ];
