@@ -5,8 +5,13 @@ import './About.scss';
 
 const About = () => {
   return (
-    <Layout>
-      <div>About Page</div>
+    <Layout 
+      pageTitle="About" 
+      pageDescription="place description here">
+  
+      <main className="about-container">
+        {/* Portfolio content */}
+      </main>
     </Layout>
   );
 };

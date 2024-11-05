@@ -4,9 +4,11 @@ import Layout from '@components/layout/Layout';
 
 const Blog = () => {
  return (
-   <Layout>
-     <div>Blog Page</div>
-   </Layout>
+  <Layout showPageTitle={false}>
+      <main className="home-container">
+        {/* Homepage content */}
+      </main>
+    </Layout>
  );
 };
 
