@@ -1,0 +1,9 @@
+// src/styles/_index.scss
+@forward "@styles/device-styles";
+@forward "@styles/variables";
+@forward "@styles/mixins";
+@forward "@styles/reset";
+@forward "@styles/base";
+@forward "@styles/typography";
+@forward "@styles/animations";
+@forward "@styles/fonts";

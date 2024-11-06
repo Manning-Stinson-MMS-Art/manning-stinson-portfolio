@@ -1,6 +1,9 @@
-@import './variables';
 
 /* Global styles */
+// base.scss
+@use './variables' as *;  // Add this at the top of base.scss
+
+// Rest of your base styles that use the variables
 
 body {
   font-family: 'Arial', sans-serif;

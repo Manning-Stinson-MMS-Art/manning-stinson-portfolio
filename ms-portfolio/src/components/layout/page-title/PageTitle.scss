@@ -1,12 +1,12 @@
 // PageTitle.scss
 .page-title-container {
   @include container;
-  padding: 3rem 1rem;  // Keep some padding
+  padding: 3rem 1rem;
   background-color: #fff;
   
   &.text-left {
     text-align: left;
-    padding-left: 6rem;  // Adjust this value to match your logo's position
+    padding-left: 2rem;  // Default for mobile
     
     .page-title {
       text-align: left;
@@ -19,8 +19,20 @@
       margin-left: 0;
       margin-right: 0;
     }
+
+    @include x-small {
+      padding-left: 1.5rem;  // Extra small devices
+    }
+
+    @include min-medium {
+      padding-left: 6rem;  // Medium devices and up
+    }
   }
   
+  @include x-small {
+    padding: 2rem 1rem;
+  }
+
   @include small {
     padding: 2rem 1rem;
   }

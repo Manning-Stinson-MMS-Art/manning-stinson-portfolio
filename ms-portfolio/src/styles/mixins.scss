@@ -1,8 +1,23 @@
 // mixins.scss
-@import './device-styles';
-@import './animations';
-@import './utilities';
-@import './typography';
+
+@mixin container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+// _mixins.scss
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 // Only add mixins here that don't clearly fit in other categories
 // Or mixins that combine multiple other mixins
@@ -11,6 +26,7 @@
   @include flex-center;
   @include smooth-transition;
 }
+
 
 @mixin form-input {
   width: 100%;
