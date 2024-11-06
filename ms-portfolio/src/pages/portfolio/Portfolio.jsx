@@ -7,7 +7,7 @@ const Portfolio = () => {
   return (
     <Layout
       pageTitle="Portfolio"
-      pageDescription="anomaly"
+      pageDescription="A collection of anomalies"
       titleAlignment="text-left"  // Add this line
     >
       <main className="portfolio-container">
