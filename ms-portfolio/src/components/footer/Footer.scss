@@ -1,10 +1,10 @@
 .footer {
     background-color: #fafafa;
-    color: $text-color;
+    color: $color-primary;
     font-family: 'Open Sans', sans-serif;
     width: 100%; /* Use 100% instead of 100vw */
     margin: 0;
-    padding: $spacing-medium;
+    padding: $spacing-md;
     position: relative;
     left: 50%;
     right: 50%;

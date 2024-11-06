@@ -1,9 +1,9 @@
 .social-icons-wrapper {
  display: flex;
- gap: 1.5rem;
+ gap: $spacing-xs;
  
  a {
-   color: primary-color;
+   color: $color-primary;
    font-size: 4rem;
    transition: opacity 0.3s ease;
    

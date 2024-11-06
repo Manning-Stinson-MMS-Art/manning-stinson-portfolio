@@ -9,6 +9,30 @@ h1 {
  line-height: 1.6;
 }
 
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1f2937;
+  
+  @include x-small {
+    font-size: 2rem;
+  }
+  
+  @include min-large {
+    font-size: 3.5rem;
+  }
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #0d55e5;
+  margin-top: 1.5rem;
+  
+  @include x-small {
+    font-size: 1rem;
+  }
+}
+
 // mixins.scss - Add this to your typography section
 /* Typography Mixins
 –––––––––––––––––––––––––––––––––––––––––––––– */

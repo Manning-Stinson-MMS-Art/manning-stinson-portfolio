@@ -12,12 +12,12 @@
 
 .page-title {
   @include page-title-font;
-  color: $primary-color;
+  color: $color-primary;
 }
 
 .page-description {
   margin-top: .5rem;
-  color: $secondary-color;
+  color: $color-primary;
   font-size: 1.1rem;
   max-width: 600px;
   margin-left: auto;
