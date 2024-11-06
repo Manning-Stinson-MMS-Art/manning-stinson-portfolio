@@ -1,7 +1,7 @@
 // Home.jsx
 import React from 'react';
 import Layout from '@components/layout/Layout';
-import './Home.scss';  // Import the styles
+import './index.scss';  // Import the styles
 
 const Home = () => {
   return (

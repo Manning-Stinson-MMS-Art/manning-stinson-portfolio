@@ -2,7 +2,7 @@
 import React from 'react';
 import Layout from '@components/layout/Layout';
 import ContactForm from '@components/contact-form/ContactForm';  // Add this import
-import './Contact.scss';
+import './index.scss';
 
 const Contact = () => {
   return (

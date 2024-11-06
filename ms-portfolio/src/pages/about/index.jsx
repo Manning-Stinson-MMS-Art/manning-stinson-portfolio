@@ -1,7 +1,7 @@
 // Contact.jsx
 import React from 'react';
 import Layout from '@components/layout/Layout';
-import './About.scss';
+import './index.scss';
 
 const About = () => {
   return (
