@@ -1,10 +1,26 @@
 // PageTitle.scss
 .page-title-container {
   @include container;
-  padding: 3rem 1rem;
+  padding: 3rem 1rem;  // Keep some padding
   background-color: #fff;
-
-
+  
+  &.text-left {
+    text-align: left;
+    padding-left: 6rem;  // Adjust this value to match your logo's position
+    
+    .page-title {
+      text-align: left;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    
+    .page-description {
+      text-align: left;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  
   @include small {
     padding: 2rem 1rem;
   }
@@ -20,6 +36,6 @@
   color: $color-primary;
   font-size: 1.1rem;
   max-width: 600px;
-  margin-left: auto;
+  margin-left: 0;
   margin-right: auto;
 }
