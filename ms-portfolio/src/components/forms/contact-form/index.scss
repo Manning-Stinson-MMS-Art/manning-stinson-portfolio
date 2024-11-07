@@ -1,0 +1,53 @@
+.contact-container {
+  width: 100%;
+  max-width: $max-width-container;
+  margin: 0 auto;
+  padding: $spacing-md;
+  background-color: #fff;
+
+  .contact-grid {
+    display: grid;
+    gap: $spacing-xl;  // assuming 4rem is defined as $spacing-xl
+    
+    @include min-medium {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .contact-content {
+    .contact-info {
+      margin-top: $spacing-lg;
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-md;
+
+      .info-item {
+        display: flex;
+        align-items: center;
+        gap: $spacing-xs;
+        color: $color-text-light;
+
+        .icon {
+          font-size: $icon-size;
+          color: $color-text-lighter;
+        }
+      }
+    }
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-m;
+
+    .form-group {
+      .input-field {
+        @include form-input;
+      }
+    }
+
+    .submit-button {
+      @include button-primary;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+/* footer-menu */
+.footer-menu {
+    display: flex;
+    gap: 5px;
+}
+.footer-menu a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: lowercase;
+    transition: color 0.2s ease;
+    padding: 0 12px; /* Optional: Adds some padding around each link */
+}
+
+.footer-menu a:hover {
+    color: #333;
+}
