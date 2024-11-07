@@ -2,14 +2,13 @@ import fs from 'fs';
 import path from 'path';
 
 export async function restructureComponents(baseDir) {
+  console.log('Starting component restructuring...');
+
   const processDirectory = async (dir) => {
     const entries = fs.readdirSync(dir, { withFileTypes: true });
-    
-    // First, find any existing barrel files
-    const barrelFile = entries.find(e => e.name === 'index.jsx');
-    const barrelContent = barrelFile ? fs.readFileSync(path.join(dir, barrelFile.name), 'utf8') : null;
-    
-    // Process regular component files first
+    console.log(`Processing directory: ${dir}`);
+
+    // First pass: Handle component files
     for (const entry of entries) {
       const fullPath = path.join(dir, entry.name);
       
@@ -18,80 +17,69 @@ export async function restructureComponents(baseDir) {
         continue;
       }
 
-      // Skip non-jsx files, barrel files, and already processed files
-      if (!entry.name.endsWith('.jsx') || entry.name === 'index.jsx') {
+      // Skip index files in first pass
+      if (entry.name === 'index.jsx' || entry.name === 'index.scss') {
         continue;
       }
 
-      const dirName = path.dirname(fullPath);
-      const componentName = path.basename(entry.name, '.jsx');
-      const componentContent = fs.readFileSync(fullPath, 'utf8');
-
-      // Check if this component is exported in a barrel file
-      const isBarreled = barrelContent?.includes(`export * from './${componentName}'`) ||
-                        barrelContent?.includes(`export { default } from './${componentName}'`);
-
-      if (isBarreled) {
-        // Create subdirectory for the component
+      // Handle component files (e.g., Footer.jsx, FooterContainer.jsx)
+      if (entry.name.endsWith('.jsx')) {
+        const dirName = path.dirname(fullPath);
+        const componentName = path.basename(entry.name, '.jsx');
         const componentDir = path.join(dirName, componentName.toLowerCase());
+        const newIndexPath = path.join(componentDir, 'index.jsx');
+        
+        console.log(`Processing component: ${componentName}`);
+
+        // Create component directory if it doesn't exist
         if (!fs.existsSync(componentDir)) {
-          fs.mkdirSync(componentDir);
+          fs.mkdirSync(componentDir, { recursive: true });
         }
 
-        // Move component file
-        const newComponentPath = path.join(componentDir, 'index.jsx');
-        fs.writeFileSync(newComponentPath, componentContent);
+        // Move JSX file
+        const content = fs.readFileSync(fullPath, 'utf8');
+        // Update SCSS import in content if it exists
+        const updatedContent = content.replace(
+          new RegExp(`import ['"].*${componentName}\\.scss['"]`),
+          `import './index.scss'`
+        );
+        fs.writeFileSync(newIndexPath, updatedContent);
 
-        // Move associated SCSS file if it exists
-        const scssPath = fullPath.replace('.jsx', '.scss');
-        if (fs.existsSync(scssPath)) {
+        // Handle associated SCSS file
+        const scssFile = fullPath.replace('.jsx', '.scss');
+        if (fs.existsSync(scssFile)) {
           const newScssPath = path.join(componentDir, 'index.scss');
-          fs.renameSync(scssPath, newScssPath);
-          
-          // Update SCSS import in the component file
-          const updatedContent = componentContent.replace(
-            new RegExp(`import ['"].*${componentName}\\.scss['"]`),
-            `import './index.scss'`
-          );
-          fs.writeFileSync(newComponentPath, updatedContent);
+          fs.renameSync(scssFile, newScssPath);
         }
 
-        // Remove original file
+        // Remove original files
         fs.unlinkSync(fullPath);
-      } else {
-        // Just rename to index.jsx if not in barrel file
-        const indexPath = path.join(dirName, 'index.jsx');
-        if (!fs.existsSync(indexPath)) {
-          fs.renameSync(fullPath, indexPath);
-          
-          // Handle associated SCSS file
-          const scssPath = fullPath.replace('.jsx', '.scss');
-          if (fs.existsSync(scssPath)) {
-            const newScssPath = path.join(dirName, 'index.scss');
-            fs.renameSync(scssPath, newScssPath);
-            
-            // Update SCSS import
-            const updatedContent = componentContent.replace(
-              new RegExp(`import ['"].*${componentName}\\.scss['"]`),
-              `import './index.scss'`
-            );
-            fs.writeFileSync(indexPath, updatedContent);
-          }
-        }
       }
     }
 
-    // Update barrel file imports if it exists
-    if (barrelContent) {
-      const updatedBarrelContent = barrelContent.replace(
-        /from ['"]\.\/([^'"]+)['"]/g,
-        (match, importPath) => {
-          return `from './${importPath.toLowerCase()}/index'`;
-        }
-      );
-      fs.writeFileSync(path.join(dir, 'index.jsx'), updatedBarrelContent);
+    // Second pass: Update and clean up index files
+    for (const entry of entries) {
+      const fullPath = path.join(dir, entry.name);
+      
+      if (entry.name === 'index.jsx') {
+        const content = fs.readFileSync(fullPath, 'utf8');
+        
+        // Update import paths in index files
+        const updatedContent = content.replace(
+          /from ['"]\.\/([^/'"]+)['"];?/g,
+          (match, importName) => `from './${importName.toLowerCase()}/index';`
+        );
+        
+        fs.writeFileSync(fullPath, updatedContent);
+      }
     }
   };
 
-  await processDirectory(baseDir);
+  try {
+    await processDirectory(baseDir);
+    console.log('Component restructuring completed successfully');
+  } catch (error) {
+    console.error('Error during restructuring:', error);
+    throw error;
+  }
 }
