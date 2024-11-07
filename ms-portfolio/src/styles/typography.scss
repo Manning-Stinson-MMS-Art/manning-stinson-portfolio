@@ -1,55 +1,55 @@
-// typography.scss - For text styles and typography mixins
-@use "@styles/device-styles" as *;
-@use './variables' as *;
+ typography.scss - For text styles and typography mixins
+use stylesdevice-styles as 
+use .variables as 
 
 
 
 h1 {
- font-size: 2.5rem;
- line-height: 1.2;
+ font-size: 2.5rem
+ line-height: 1.2
 }
 
 .body-text {
- font-size: 1rem;
- line-height: 1.6;
+ font-size: 1rem
+ line-height: 1.6
 }
 
 .title {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #1f2937;
+  font-size: 3rem
+  font-weight: 700
+  color: 1f2937
   
-  @include x-small {
-    font-size: 2rem;
+  include x-small {
+    font-size: 2rem
   }
   
-  @include min-large {
-    font-size: 3.5rem;
+  include min-large {
+    font-size: 3.5rem
   }
 }
 
 .subtitle {
-  font-size: 1.25rem;
-  color: #0d55e5;
-  margin-top: 1.5rem;
+  font-size: 1.25rem
+  color: 0d55e5
+  margin-top: 1.5rem
   
-  @include x-small {
-    font-size: 1rem;
+  include x-small {
+    font-size: 1rem
   }
 }
 
-// mixins.scss - Add this to your typography section
-/* Typography Mixins
-–––––––––––––––––––––––––––––––––––––––––––––– */
-@mixin page-title-font {
- font-family: 'Inter', 'Open Sans', sans-serif;
- font-weight: 700;
- font-size: 2.5rem;
- text-align: center;
- text-transform: lowercase;
+ mixins.scss - Add this to your typography section
+ Typography Mixins
  
- @include small {
-   font-size: 2rem;
+mixin page-title-font {
+ font-family: Inter Open Sans sans-serif
+ font-weight: 700
+ font-size: 2.5rem
+ text-align: center
+ text-transform: lowercase
+ 
+ include small {
+   font-size: 2rem
  }
 }
 

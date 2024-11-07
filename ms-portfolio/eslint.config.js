@@ -3,11 +3,12 @@ import globals from 'globals';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
+import importPlugin from 'eslint-plugin-import'; // Correctly import plugin
 
 export default [
   { ignores: ['dist'] },
   {
-    files: ['**/*.{js,jsx}'],
+    files: ['**/*.{js,jsx,ts,tsx}'],
     languageOptions: {
       ecmaVersion: 2020,
       globals: {
@@ -25,6 +26,7 @@ export default [
       react,
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
+      import: importPlugin,  // Ensure this is included
     },
     rules: {
       ...js.configs.recommended.rules,
@@ -41,12 +43,17 @@ export default [
         { varsIgnorePattern: 'React' },
       ],
       'react/prop-types': 'off',
+      // Import related rules
+      'import/no-unresolved': 'error',  // Ensure all imports are resolved
+      'import/named': 'error',         // Ensure named imports are valid
+      'import/default': 'error',       // Ensure default imports are valid
+      'import/no-absolute-path': 'error',  // Prevent absolute imports outside of src
     },
   },
   {
-    files: ['**/*.css', '**/*.scss'], // Ignore CSS and SCSS files in ESLint
+    files: ['**/*.css', '**/*.scss'],
     rules: {
-      'no-use-before-define': 'off', // You can customize as needed
+      'no-use-before-define': 'off',
     },
   },
 ];

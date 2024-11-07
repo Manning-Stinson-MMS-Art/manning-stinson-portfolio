@@ -1,31 +1,31 @@
 
-/* Global styles */
-// base.scss
-@use './variables' as *;  // Add this at the top of base.scss
+ Global styles 
+ base.scss
+use .variables as    Add this at the top of base.scss
 
-// Rest of your base styles that use the variables
+ Rest of your base styles that use the variables
 
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: $primary-bg;
+  font-family: Arial sans-serif
+  background-color: primary-bg
 }
 
 h1 {
-  color: $color-primary;
+  color: color-primary
 }
 
-#root {
-  // Remove the max-width for the header to extend fully
-  width: 100%;
-  margin: 0; // Changed from margin: 0 auto
-  padding: 0; // Remove default padding
-  text-align: center;
+root {
+   Remove the max-width for the header to extend fully
+  width: 100
+  margin: 0  Changed from margin: 0 auto
+  padding: 0  Remove default padding
+  text-align: center
 
-  // If you want to keep the original styles for main content
-  // You can create a main container inside root
+   If you want to keep the original styles for main content
+   You can create a main container inside root
   .main-content {
-    max-width: 1248px;
-    margin: 0 auto;
-    padding: 2rem;
+    max-width: 1248px
+    margin: 0 auto
+    padding: 2rem
   }
 }

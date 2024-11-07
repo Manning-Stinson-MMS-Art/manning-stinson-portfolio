@@ -1,12 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './index.scss';
+import './FooterMenu.scss';
 
 const FooterMenu = () => {
   return (
-   <footer class="footer-container">
-    <div class="footer-content">
-        <nav class="footer-menu">
+   <footer className="footer-container">
+    <div className="footer-content">
+        <nav className="footer-menu">
             <a href="/about">about</a>
             <a href="/portfolio">portfolio</a>
             <a href="/blog">blog</a>

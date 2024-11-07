@@ -1,0 +1,36 @@
+// HeaderContainer.scss
+.header-container {
+ @include flex-center; // Using utility mixin
+ background-color: #373749;
+ width: 100%;
+ margin: 0;
+ box-sizing: border-box;
+ height: 65px;
+ min-height: 65px;
+ max-height: 65px;
+}
+
+.header-content {
+ max-width: 1248px;
+ width: 100%;
+ padding: 1rem 2rem;
+ @include flex-between; // Using utility mixin
+ 
+ @include x-small {
+   padding: 1rem;
+ }
+}
+
+.desktop-nav {
+ display: flex;
+ align-items: center;
+ gap: 2rem;
+ 
+ @include small {
+   display: none;
+ }
+ 
+ @include medium {
+   gap: 1.5rem;
+ }
+}
