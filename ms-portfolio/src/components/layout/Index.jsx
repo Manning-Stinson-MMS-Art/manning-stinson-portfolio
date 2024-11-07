@@ -1,15 +1,16 @@
+// src/components/layout/index.jsx
 import React from 'react';
-import Header from 'src/components/header';
-import Footer from 'src/components/footer';
-import PageWrapper from 'src/components/layout/page-wrapper';
-import PageTitle from "./page-title/Index"
+import Header from '../header';           // Updated to relative path
+import Footer from '../footer';           // Updated to relative path
+import PageWrapper from './page-wrapper'; // Updated to relative path
+import PageTitle from './page-title';     // Updated to relative path (and removed /Index)
 
 const Layout = ({ 
   children, 
   showPageTitle = true, 
   pageTitle = "", 
   pageDescription = "",
-  titleAlignment = "text-center" // Add default alignment
+  titleAlignment = "text-center"
 }) => {
   return (
     <PageWrapper>
@@ -18,7 +19,7 @@ const Layout = ({
         <PageTitle 
           title={pageTitle} 
           description={pageDescription} 
-          alignment={titleAlignment}  // Pass alignment to PageTitle
+          alignment={titleAlignment}
         />
       )}
       {children}
