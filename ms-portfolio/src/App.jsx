@@ -1,11 +1,12 @@
 // src/App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/home';
-import Contact from './pages/contact';
-import Portfolio from './pages/portfolio';
-import Blog from './pages/blog';
-import About from './pages/about';
+import Home from './pages/home/index';
+import Portfolio from './pages/portfolio/index';
+import Contact from './pages/contact/Index'
+import Blog from './pages/blog/Index'
+import About from './pages/about/Index'
+
 
 const App = () => {
   return (
