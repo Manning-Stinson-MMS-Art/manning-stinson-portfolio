@@ -23,10 +23,13 @@ async function runGitCommand(command) {
 
 async function executeRestructuring() {
   try {
-    // Get the current working directory
+    // Update the directory path to include ms-portfolio
     const currentDir = process.cwd();
-    const componentsDir = path.join(currentDir, 'src', 'components');
+    const projectDir = path.join(currentDir, 'ms-portfolio');
+    const componentsDir = path.join(projectDir, 'src', 'components');
 
+    console.log(`Looking for components in: ${componentsDir}`);
+    
     // 1. Check for clean working directory
     const status = await runGitCommand('git status --porcelain');
     if (status.length > 0) {
