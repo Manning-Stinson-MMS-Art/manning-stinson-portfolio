@@ -4,41 +4,19 @@ import path from 'path';
 export async function cleanupComponents(baseDir) {
   const issues = {
     emptyDirs: [],
-    duplicateIndexFiles: [],
-    inconsistentImports: [],
-    unusedScssFiles: [],
-    unnecessaryBarrels: []
+    fixedImports: [],
+    updatedScss: [],
+    unusedFiles: []
   };
 
-  async function isDirectoryEmpty(dir) {
-    const files = await fs.promises.readdir(dir);
-    return files.length === 0;
-  }
-
-  async function removeEmptyDirectories(dir) {
-    const entries = await fs.promises.readdir(dir, { withFileTypes: true });
-    
-    for (const entry of entries) {
-      if (!entry.isDirectory()) continue;
-      
-      const fullPath = path.join(dir, entry.name);
-      await removeEmptyDirectories(fullPath);
-      
-      if (await isDirectoryEmpty(fullPath)) {
-        issues.emptyDirs.push(fullPath);
-        await fs.promises.rmdir(fullPath);
-      }
-    }
-  }
-
-  async function standardizeImports(dir) {
+  async function updateImportPaths(dir) {
     const entries = await fs.promises.readdir(dir, { withFileTypes: true });
     
     for (const entry of entries) {
       const fullPath = path.join(dir, entry.name);
       
       if (entry.isDirectory()) {
-        await standardizeImports(fullPath);
+        await updateImportPaths(fullPath);
         continue;
       }
 
@@ -46,37 +24,74 @@ export async function cleanupComponents(baseDir) {
         let content = await fs.promises.readFile(fullPath, 'utf8');
         let modified = false;
 
-        const importRegex = /from\s+['"]\.\.?\/(.*?)['"]/g;
-        content = content.replace(importRegex, (match, importPath) => {
+        // Fix relative imports
+        const importRegex = /from\s+['"]([\.\/]+)([^'"]+)['"]/g;
+        content = content.replace(importRegex, (match, dots, importPath) => {
           modified = true;
-          const cleanPath = importPath.replace(/\/index$/, '');
-          return `from '../${cleanPath}'`;
+          // Clean up the import path
+          const cleanPath = importPath
+            .replace(/\/index$/, '')
+            .replace(/\.jsx$/, '');
+          return `from '${dots}${cleanPath}'`;
         });
 
-        content = content.replace(/\/\//g, '/');
+        // Fix SCSS imports
+        const scssRegex = /import\s+['"][^'"]*\.scss['"]/g;
+        content = content.replace(scssRegex, match => {
+          modified = true;
+          return `import './index.scss'`;
+        });
 
         if (modified) {
-          issues.inconsistentImports.push(fullPath);
+          issues.fixedImports.push(fullPath);
           await fs.promises.writeFile(fullPath, content);
         }
       }
     }
   }
 
-  await removeEmptyDirectories(baseDir);
-  await standardizeImports(baseDir);
+  async function removeEmptyDirs(dir) {
+    const entries = await fs.promises.readdir(dir, { withFileTypes: true });
+    
+    for (const entry of entries) {
+      if (!entry.isDirectory()) continue;
+      
+      const fullPath = path.join(dir, entry.name);
+      await removeEmptyDirs(fullPath);
+      
+      const files = await fs.promises.readdir(fullPath);
+      if (files.length === 0) {
+        issues.emptyDirs.push(fullPath);
+        await fs.promises.rmdir(fullPath);
+      }
+    }
+  }
+
+  // Run cleanup functions
+  await updateImportPaths(baseDir);
+  await removeEmptyDirs(baseDir);
 
   // Generate report
   console.log('\nCleanup Report:');
   console.log('---------------');
   
+  if (issues.fixedImports.length) {
+    console.log('\nFixed imports in:');
+    issues.fixedImports.forEach(file => console.log(`- ${file}`));
+  }
+
   if (issues.emptyDirs.length) {
     console.log('\nRemoved empty directories:');
     issues.emptyDirs.forEach(dir => console.log(`- ${dir}`));
   }
 
-  if (issues.inconsistentImports.length) {
-    console.log('\nFixed import statements in:');
-    issues.inconsistentImports.forEach(file => console.log(`- ${file}`));
+  if (issues.updatedScss.length) {
+    console.log('\nUpdated SCSS imports in:');
+    issues.updatedScss.forEach(file => console.log(`- ${file}`));
+  }
+
+  if (issues.unusedFiles.length) {
+    console.log('\nFound unused files:');
+    issues.unusedFiles.forEach(file => console.log(`- ${file}`));
   }
 }

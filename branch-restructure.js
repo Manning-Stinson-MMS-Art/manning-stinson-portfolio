@@ -1,6 +1,7 @@
 import { execSync } from 'child_process';
 import { createInterface } from 'readline';
 import path from 'path';
+import fs from 'fs';
 
 const rl = createInterface({
   input: process.stdin,
@@ -23,10 +24,15 @@ async function runGitCommand(command) {
 
 async function executeRestructuring() {
   try {
-    // Update the directory path to include ms-portfolio
+    // Verify directory structure exists
     const currentDir = process.cwd();
     const projectDir = path.join(currentDir, 'ms-portfolio');
     const componentsDir = path.join(projectDir, 'src', 'components');
+
+    if (!fs.existsSync(componentsDir)) {
+      console.error(`Components directory not found at: ${componentsDir}`);
+      process.exit(1);
+    }
 
     console.log(`Looking for components in: ${componentsDir}`);
     
@@ -56,11 +62,12 @@ async function executeRestructuring() {
     await restructureComponents(componentsDir);
     
     // Wait for confirmation before cleanup
-    await question('\nPress Enter to proceed with cleanup...');
+    const shouldCleanup = await question('\nDo you want to proceed with cleanup? This will fix import paths and remove empty directories (yes/no): ');
     
-    // Second script - cleanup
-    const { cleanupComponents } = await import('./cleanup-components.js');
-    await cleanupComponents(componentsDir);
+    if (shouldCleanup.toLowerCase() === 'yes') {
+      const { cleanupComponents } = await import('./cleanup-components.js');
+      await cleanupComponents(componentsDir);
+    }
 
     // 5. Stage changes
     console.log('\nStaging changes...');
@@ -77,10 +84,11 @@ async function executeRestructuring() {
     if (shouldCommit.toLowerCase() === 'yes') {
       const commitMessage = `refactor: Restructure component files
 
-- Standardize component file naming
-- Clean up directory structure
-- Update import paths
-- Remove unused files and directories`;
+- Standardize component file naming to index.jsx
+- Update nested component structure
+- Fix import paths
+- Reorganize SCSS files
+- Clean up directory structure`;
 
       await runGitCommand(`git commit -m "${commitMessage}"`);
       console.log('\nChanges committed successfully!');
