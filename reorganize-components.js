@@ -131,6 +131,31 @@ async function reorganizeComponents() {
           continue;
         }
 
+        // Special handling for contact-form component
+        if (entry.name === 'contact-form' && parentName === 'components') {
+          const formsDir = path.join(dir, 'forms');
+          const newContactFormDir = path.join(formsDir, 'contact-form');
+          
+          if (!fs.existsSync(formsDir)) {
+            fs.mkdirSync(formsDir, { recursive: true });
+          }
+          
+          if (!fs.existsSync(newContactFormDir)) {
+            fs.mkdirSync(newContactFormDir, { recursive: true });
+            await moveAndRenameComponent(fullPath, newContactFormDir);
+            issues.movedComponents.push(`Moved contact-form to forms directory`);
+          }
+          continue;
+        }
+
+        // Delete the homepage-hero component
+        if (entry.name === 'homepage-hero') {
+          console.log(`Deleting homepage-hero component`);
+          await fs.promises.rm(fullPath, { recursive: true });
+          issues.removedDuplicates.push(fullPath);
+          continue;
+        }
+
         if (isSubComponent(entry.name, parentName)) {
           subComponents.add(fullPath);
         } else {
@@ -215,6 +240,8 @@ async function reorganizeComponents() {
       const commitMessage = `refactor: Restructure component files
 
 - Move page-wrapper into layout
+- Move contact-form into forms directory
+- Delete homepage-hero component
 - Standardize component file naming to index.jsx
 - Update nested component structure
 - Fix import paths
