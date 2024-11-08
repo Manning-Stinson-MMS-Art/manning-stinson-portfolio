@@ -1,18 +1,14 @@
 import React from 'react';
-import './FooterMenu.scss';
+import './index.scss';  // Changed from FooterMenu.scss to match your tree structure
 
 const FooterMenu = () => {
   return (
-   <footer className="footer-container">
-    <div className="footer-content">
-        <nav className="footer-menu">
-            <a href="/about">about</a>
-            <a href="/portfolio">portfolio</a>
-            <a href="/blog">blog</a>
-            <a href="/contact">contact</a>
-        </nav>
-    </div>
-</footer>
+    <nav className="footer-menu">
+      <a href="/about">about</a>
+      <a href="/portfolio">portfolio</a>
+      <a href="/blog">blog</a>
+      <a href="/contact">contact</a>
+    </nav>
   );
 };
 

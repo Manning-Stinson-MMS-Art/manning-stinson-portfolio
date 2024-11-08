@@ -1,4 +1,5 @@
-import './FooterCopyright.scss';
+import React from 'react';  // Added React import
+import './index.scss';  // Changed from FooterCopyright.scss to match your tree structure
 
 const FooterCopyright = () => {
   return (

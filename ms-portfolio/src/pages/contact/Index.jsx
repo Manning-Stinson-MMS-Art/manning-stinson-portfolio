@@ -1,8 +1,7 @@
-// src/pages/contact/index.jsx
 import React from 'react';
-import Layout from '../../components/layout';                // Relative path
-import ContactForm from '../../components/forms/contact-form'; // Relative path
-import './index.scss';  // Local import stays the same
+import Layout from '@components/layout/Index';
+import ContactForm from '@components/forms/contact-form';
+import './index.scss';
 
 const Contact = () => {
   return (

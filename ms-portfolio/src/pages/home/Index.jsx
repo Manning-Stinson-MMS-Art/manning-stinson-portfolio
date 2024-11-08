@@ -1,6 +1,6 @@
 // src/pages/home/index.jsx
 import React from 'react';
-import Layout from '../../components/layout';  // Relative path to Layout
+import Layout from '@components/layout/Index';  // Relative path to Layout
 import './index.scss';
 
 const Home = () => {
