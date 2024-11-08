@@ -1,11 +1,10 @@
-// src/App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/home';  // Simplified relative path
-import Portfolio from './pages/portfolio';
-import Contact from './pages/contact';
-import Blog from './pages/blog';
-import About from './pages/about';
+import Home from '@pages/home/Index';
+import Portfolio from '@pages/portfolio/Index';
+import Contact from '@pages/contact/Index';
+import Blog from '@pages/blog/Index';
+import About from '@pages/about/Index';
 
 const App = () => {
   return (
