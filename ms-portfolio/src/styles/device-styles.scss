@@ -1,44 +1,62 @@
- _device-styles.scss or device-styles.scss
-mixin x-small {
-  media max-width: 480px { content }
+// _device-styles.scss
+@mixin x-small {
+  @media (max-width: 480px) { 
+    @content; 
+  }
 }
 
-mixin small {
-  media min-width: 481px and max-width: 768px { content }
+@mixin small {
+  @media (min-width: 481px) and (max-width: 768px) { 
+    @content; 
+  }
 }
 
-mixin medium {
-  media min-width: 769px and max-width: 1024px { content }
+@mixin medium {
+  @media (min-width: 769px) and (max-width: 1024px) { 
+    @content; 
+  }
 }
 
-mixin large {
-  media min-width: 1025px and max-width: 1200px { content }
+@mixin large {
+  @media (min-width: 1025px) and (max-width: 1200px) { 
+    @content; 
+  }
 }
 
-mixin x-large {
-  media min-width: 1201px and max-width: 1440px { content }
+@mixin x-large {
+  @media (min-width: 1201px) and (max-width: 1440px) { 
+    @content; 
+  }
 }
 
-mixin ultra-wide {
-  media min-width: 1441px { content }
+@mixin ultra-wide {
+  @media (min-width: 1441px) { 
+    @content; 
+  }
 }
 
-mixin min-small {
-  media min-width: 481px { content }
+@mixin min-small {
+  @media (min-width: 481px) { 
+    @content; 
+  }
 }
 
-mixin min-medium {
-  media min-width: 769px { content }
+@mixin min-medium {
+  @media (min-width: 769px) { 
+    @content; 
+  }
 }
 
-mixin min-large {
-  media min-width: 1025px { content }
+@mixin min-large {
+  @media (min-width: 1025px) { 
+    @content; 
+  }
 }
 
 :export {
-  xsmall: 480px
-  small: 768px
-  medium: 1024px
-  large: 1200px
-  xlarge: 1440px
+  xsmall: 480px;
+  small: 768px;
+  medium: 1024px;
+  large: 1200px;
+  xlarge: 1440px;
 }
