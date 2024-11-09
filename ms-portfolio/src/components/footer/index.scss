@@ -2,15 +2,9 @@
     background-color: #fafafa;
     color: $color-primary;
     font-family: 'Open Sans', sans-serif;
-    width: 100%; /* Use 100% instead of 100vw */
+    width: 100%;
     margin: 0;
     padding: $spacing-md;
     position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
     box-sizing: border-box;
-    /* Alternatively, try this if there are issues with margins */
-    /* margin-left: calc(-50% + 50vw); margin-right: calc(-50% + 50vw); */
 }

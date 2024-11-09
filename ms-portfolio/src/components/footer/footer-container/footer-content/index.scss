@@ -1,15 +1,11 @@
-
 .footer-content {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    flex: 1; /* This makes the content take up remaining space */
-    min-width: 0; /* This helps prevent overflow issues */
     padding-top: 1vh;
-}
-
-@media screen and (max-width: 768px) {
-    .footer-content {
+    margin-left: auto;
+    
+    @include small {
         display: none;
     }
 }

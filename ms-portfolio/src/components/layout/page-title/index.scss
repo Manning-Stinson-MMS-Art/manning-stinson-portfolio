@@ -1,58 +1,51 @@
-// PageTitle.scss
 .page-title-container {
   @include container;
-  padding: 1rem;
+  position: relative;
   background-color: #fff;
-  margin-top: 0;
-  padding-top:2rem;
-  padding-bottom: 2rem;
+  padding: 0rem;
+  width: 100%;
+  display: block;
+  
+  @include x-small {
+    margin-top: 65px;
+  }
+  
+  @include small {
+    margin-top: .50rem;
+  }
+  
+  @include min-medium {
+    margin-top: 1.25rem;
+  }
   
   &.text-left {
     text-align: left;
-    padding-left: 0;  // Default for mobile
+    padding-left: 0;
     
     .page-title {
       text-align: left;
-      margin-left: 0;
-      margin-right: 0;
-      padding-top:0;
-      padding-bottom:0;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      display: block;
     }
     
     .page-description {
       text-align: left;
-      margin-left: 0;
-      margin-right: 0;
+      margin: 0.5rem 0 0 0;
+      width: 100%;
+      display: block;
     }
-
+    
     @include x-small {
-      padding-left: 1.5rem;  // Extra small devices
+      padding-left: 1.5rem;
     }
-
+    
     @include min-medium {
-      padding-left: 6rem;  // Medium devices and up
+      padding-left: 6rem;
     }
   }
   
-  @include x-small {
-    padding: 2rem 1rem;
-  }
-
-  @include small {
-    padding: 2rem 1rem;
-  }
-}
-
-.page-title {
-  @include page-title-font;
-  color: $color-primary;
-}
-
-.page-description {
-  margin-top: .5rem;
-  color: $color-primary;
-  font-size: 1.1rem;
-  max-width: 600px;
-  margin-left: 0;
-  margin-right: auto;
+  display: block;
+  flex: none;
 }
