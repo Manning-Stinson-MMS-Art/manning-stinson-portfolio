@@ -1,14 +1,9 @@
+// src/components/footer/index.scss
 .footer {
-    background-color: #fafafa;
-    color: $color-primary;
-    font-family: 'Open Sans', sans-serif;
-    width: 100%;
-    margin: 0;
-    padding: $spacing-md;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: calc(-50% + 50vw); 
-    margin-right: calc(-50% + 50vw);
-    box-sizing: border-box;    
+  width: 100%;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;  // Center the container
 }

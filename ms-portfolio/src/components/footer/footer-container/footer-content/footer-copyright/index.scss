@@ -1,19 +1,35 @@
+// src/components/footer/footer-container/footer-content/footer-copyright/index.scss
 .footer-copyright {
-    color: #666;
-    white-space: nowrap;
-    margin: 0;
+  color: #666;
+  white-space: nowrap;
+  margin: 0;
+  padding-top: 1vh;
+  font-size: 1rem;
+
+  @include max('xs') {
+    font-size: 0.75rem;
+    padding-top: 0.3vh;
+    white-space: normal;
+  }
+
+  @include max('sm') {
+    font-size: 0.875rem;
+    padding-top: 0.4vh;
+    white-space: normal;
+  }
+
+  @include min('md') {
+    font-size: 1rem;
     padding-top: 1vh;
-    
-    @include max('xs') {  // instead of @include x-small
-        margin-left: 0;
-    }
-    
-    @include max('sm') {  // instead of @include small
-        font-size: 12px;
-        margin-left: 0;
-    }
-    
-    @include min('md') {  // instead of @include min-medium
-        margin-left: 0;
-    }
+  }
+
+  @include min('lg') {
+    font-size: 1rem;
+    padding-top: 1vh;
+  }
+
+  @include min('xl') {
+    font-size: 1rem;
+    padding-top: 1vh;
+  }
 }

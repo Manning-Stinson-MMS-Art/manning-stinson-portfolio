@@ -1,18 +1,58 @@
-/* footer-menu */
+// src/components/footer/footer-container/footer-menu/index.scss
 .footer-menu {
-    display: flex;
-    gap: 5px;
-}
+  display: flex;
+  gap: 5px;
 
-.footer-menu a {
+  a {
     color: #666;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 1rem;
     text-transform: lowercase;
     transition: color 0.2s ease;
-    padding: 0 12px; /* Optional: Adds some padding around each link */
-}
+    padding: 0 12px;
 
-.footer-menu a:hover {
-    color: #333;
+    &:hover {
+      color: #333;
+    }
+  }
+
+  @include max('xs') {
+    gap: 2px;
+    a {
+      font-size: 0.75rem;
+      padding: 0 6px;
+    }
+  }
+  
+  @include max('sm') {
+    gap: 3px;
+    a {
+      font-size: 0.875rem;
+      padding: 0 8px;
+    }
+  }
+  
+  @include min('md') {
+    gap: 5px;
+    a {
+      font-size: 1rem;
+      padding: 0 12px;
+    }
+  }
+
+  @include min('lg') {
+    gap: 6px;
+    a {
+      font-size: 1rem;
+      padding: 0 14px;
+    }
+  }
+
+  @include min('xl') {
+    gap: 7px;
+    a {
+      font-size: 1rem;
+      padding: 0 16px;
+    }
+  }
 }

@@ -1,13 +1,15 @@
+// src/components/footer/footer-container/footer-content/index.scss
 .footer-content {
-    display: flex;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  @include max('sm') {
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    flex: 1;
-    min-width: 0;
-    padding-top: 1vh;
-    margin-left: auto;
-    
-    @include max('sm') {  // instead of @include small
-        display: none;
-    }
+    text-align: center;
+    gap: 15px;
+  }
 }

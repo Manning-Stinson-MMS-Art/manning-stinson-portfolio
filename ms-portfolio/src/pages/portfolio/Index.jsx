@@ -6,9 +6,6 @@ import './index.scss';
 const Portfolio = () => {
   return (
     <Layout
-      pageTitle="Portfolio"
-      pageDescription="A collection of anomalies"
-      titleAlignment="text-left"  // Add this line
     >
       <main className="portfolio-container">
         {/* Portfolio content */}

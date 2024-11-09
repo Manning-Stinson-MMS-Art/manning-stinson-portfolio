@@ -6,7 +6,7 @@ import FooterContent from './footer-container/footer-content/Index';
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="footer">     {/* This line changes from just <footer> */}
       <FooterContainer>
         <FooterContent />
       </FooterContainer>
