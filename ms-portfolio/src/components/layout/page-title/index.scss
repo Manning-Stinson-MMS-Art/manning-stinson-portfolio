@@ -2,7 +2,8 @@
   @include container;
   position: relative;
   background-color: #fff;
-  padding: 0rem;
+  padding: top 0.5rem;
+  padding-bottom: 0.5rem;
   width: 100%;
   display: block;
   
@@ -15,7 +16,8 @@
   }
   
   @include min-medium {
-    margin-top: 1.25rem;
+    padding-top: 2rem;
+    padding-bottom:2rem;
   }
   
   &.text-left {
@@ -28,6 +30,7 @@
       padding: 0;
       width: 100%;
       display: block;
+      text-transform: lowercase;
     }
     
     .page-description {
