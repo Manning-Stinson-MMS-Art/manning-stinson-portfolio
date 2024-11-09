@@ -1,5 +1,5 @@
 
-@use './device-styles' as *;
+@use './utility-mixins' as *;
 
 // Heading Styles
 h1 {
@@ -19,11 +19,11 @@ h1 {
   font-weight: 700;
   color: #1f2937;
   
-  @include x-small {
+  @include max('xs') {  // instead of @include x-small
     font-size: 2rem;
   }
   
-  @include min-large {
+  @include min('lg') {  // instead of @include min-large
     font-size: 3.5rem;
   }
 }
@@ -34,7 +34,7 @@ h1 {
   color: #0d55e5;
   margin-top: 1.5rem;
   
-  @include x-small {
+  @include max('xs') {  // instead of @include x-small
     font-size: 1rem;
   }
 }
@@ -47,7 +47,7 @@ h1 {
   text-align: center;
   text-transform: lowercase;
   
-  @include small {
+  @include max('sm') {  // instead of @include small
     font-size: 2rem;
   }
 }

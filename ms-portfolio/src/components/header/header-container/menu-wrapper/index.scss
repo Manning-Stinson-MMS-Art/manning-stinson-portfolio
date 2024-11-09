@@ -3,7 +3,7 @@
 .menu-wrapper {
   display: none;
   
-  @include small {
+  @include max('sm') {  // instead of @include small
     display: block;
   }
 }
@@ -21,7 +21,7 @@
   top: 1rem;
   right: 2rem;
 
-  @include small {
+  @include max('sm') {  // instead of @include small
     position: fixed;
     top: 1rem;
     right: 2rem;

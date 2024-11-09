@@ -1,3 +1,19 @@
+$breakpoint-xs: 480px;
+$breakpoint-sm: 481px;
+$breakpoint-md: 769px;
+$breakpoint-lg: 1025px;
+$breakpoint-xl: 1201px;
+$breakpoint-xxl: 1441px;
+
+// Breakpoints map (now all variables are defined before use)
+$breakpoints: (
+  'xs': $breakpoint-xs,
+  'sm': $breakpoint-sm,
+  'md': $breakpoint-md,
+  'lg': $breakpoint-lg,
+  'xl': $breakpoint-xl,
+  'xxl': $breakpoint-xxl
+);
 // Colors
 $color-primary: #333;  // Main brand color
 $color-primary-dark: #333;  // Darker shade for hover states
@@ -81,10 +97,3 @@ $shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
 $shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
 $shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
 
-// Grid Breakpoints
-$breakpoint-xs: 480px;
-$breakpoint-sm: 481px;
-$breakpoint-md: 769px;
-$breakpoint-lg: 1025px;
-$breakpoint-xl: 1201px;
-$breakpoint-xxl: 1441px;

@@ -2,10 +2,12 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    flex: 1;
+    min-width: 0;
     padding-top: 1vh;
     margin-left: auto;
     
-    @include small {
+    @include max('sm') {  // instead of @include small
         display: none;
     }
 }
