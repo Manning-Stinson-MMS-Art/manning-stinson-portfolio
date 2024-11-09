@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '@components/layout/Index';
-import ContactForm from '@components/forms/contact-form';
+import ContactForm from '@components/forms/contact-form/Index';
 import './index.scss';
 
 const Contact = () => {

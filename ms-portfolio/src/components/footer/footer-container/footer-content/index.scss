@@ -7,6 +7,7 @@
     min-width: 0; /* This helps prevent overflow issues */
     padding-top: 1vh;
 }
+
 @media screen and (max-width: 768px) {
     .footer-content {
         display: none;

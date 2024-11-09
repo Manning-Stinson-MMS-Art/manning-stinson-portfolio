@@ -1,5 +1,5 @@
 import React from 'react';
-import './PageWrapper.scss'; // Importing page wrapper styles
+import './index.scss'; // Importing page wrapper styles
 
 const PageWrapper = ({ children }) => {
   return (

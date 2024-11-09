@@ -1,6 +1,6 @@
 // PageTitle.jsx
 import React from 'react';
-import './PageTitle.scss';
+import './index.scss';
 
 const PageTitle = ({ title, description, alignment = "text-center" }) => {
   return (

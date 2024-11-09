@@ -1,9 +1,8 @@
 // src/components/layout/index.jsx
-import React from 'react';
-import Header from '../header';           // Updated to relative path
-import Footer from '../footer';           // Updated to relative path
-import PageWrapper from './page-wrapper'; // Updated to relative path
-import PageTitle from './page-title';     // Updated to relative path (and removed /Index)
+import Header from "../header";
+import Footer from "../footer";
+import PageWrapper from "./page-wrapper/Index"; // Updated path
+import PageTitle from "./page-title/Index";     // You might need to update this one too
 
 const Layout = ({ 
   children, 

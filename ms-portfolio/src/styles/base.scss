@@ -1,31 +1,60 @@
+@use './variables' as *;  // Import variables at the top
 
- Global styles 
- base.scss
-use .variables as    Add this at the top of base.scss
+// Reset box model for all elements
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
- Rest of your base styles that use the variables
+// Root styles
+:root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
 
+// HTML defaults
+html {
+  scroll-behavior: smooth;
+}
+
+// Body defaults
 body {
-  font-family: Arial sans-serif
-  background-color: primary-bg
+  font-family: "Arial", sans-serif;
+  background-color: $primary-bg;
+  margin: 0;
+  padding: 0;
 }
 
+// Typography
 h1 {
-  color: color-primary
+  color: $color-primary;
 }
 
-root {
-   Remove the max-width for the header to extend fully
-  width: 100
-  margin: 0  Changed from margin: 0 auto
-  padding: 0  Remove default padding
-  text-align: center
+// Links
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-   If you want to keep the original styles for main content
-   You can create a main container inside root
-  .main-content {
-    max-width: 1248px
-    margin: 0 auto
-    padding: 2rem
-  }
+// Images
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// Buttons
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+// Lists
+ul, ol {
+  list-style: none;
 }

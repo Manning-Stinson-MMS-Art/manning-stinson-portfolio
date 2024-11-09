@@ -1,10 +1,13 @@
 // HeaderContainer.jsx
-import React, { useState, useEffect } from 'react';
-import LogoWrapper from './logo-wrapper/LogoWrapper';
-import MenuWrapper from './menu-wrapper/MenuWrapper';
-import NavWrapper from './nav-wrapper/NavWrapper';
-import SocialIcons from './social-icons-wrapper/SocialIcons';
-import './HeaderContainer.scss';
+
+import React from 'react';
+import './index.scss';
+import { useEffect, useState } from 'react';
+import LogoWrapper from './logo-wrapper/Index';
+import NavWrapper from './nav-wrapper/Index';
+import MenuWrapper from './menu-wrapper/Index';
+import SocialIcons from './social-icons-wrapper/Index';
+
 
 const HeaderContainer = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

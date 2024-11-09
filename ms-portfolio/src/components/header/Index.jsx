@@ -1,6 +1,7 @@
+// src/components/header/Index.jsx
 import React from 'react';
-import HeaderContainer from './header-container/HeaderContainer';
-import './Header.scss';
+import './index.scss';
+import HeaderContainer from './header-container/Index';
 
 const Header = () => {
   return <HeaderContainer />;

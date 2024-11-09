@@ -1,5 +1,6 @@
+// src/components/footer/footer-container/footer-content/footer-menu/Index.jsx
 import React from 'react';
-import './index.scss';  // Changed from FooterMenu.scss to match your tree structure
+import './index.scss';
 
 const FooterMenu = () => {
   return (

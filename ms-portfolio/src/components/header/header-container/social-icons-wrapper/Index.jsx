@@ -1,5 +1,5 @@
 import React from 'react';
-import './SocialIcons.scss';
+import './index.scss';
 
 const SocialIcons = () => {
     const socialLinks = [
@@ -34,10 +34,6 @@ const SocialIcons = () => {
             iconClass: 'fa-brands fa-pinterest',
             color: '#fff'
         }  
-
-
-
-
 
 
     ];

@@ -1,6 +1,6 @@
 // MenuWrapper.jsx
 import React from 'react';
-import './MenuWrapper.scss';
+import './index.scss';
 
 const MenuWrapper = ({ isOpen, onToggle }) => {
   return (

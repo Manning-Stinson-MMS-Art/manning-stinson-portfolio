@@ -1,5 +1,4 @@
-export { default as Footer } from './Index';  // Assuming Index.jsx exports default
-export { default as FooterContainer } from './Index';
-export { default as FooterContent } from './Index';
-export { FooterCopyright } from './footer-copyright';
-export { FooterMenu } from './footer-menu';
+// src/components/footer/index.js
+export { default } from './Index';
+export { default as FooterContainer } from './footer-container/Index';
+export { default as FooterContent } from './footer-container/footer-content/Index';

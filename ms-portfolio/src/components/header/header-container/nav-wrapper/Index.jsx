@@ -1,5 +1,5 @@
 import React from 'react';
-import './NavWrapper.scss';
+import './index.scss';
 
 const NavWrapper = () => {
   const navItems = [

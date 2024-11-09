@@ -1,7 +1,8 @@
+// src/components/footer/Index.jsx
 import React from 'react';
-import './index.scss';  // Changed from Footer.scss to match the pattern
-import FooterContainer from './footer-container';  // Simplified import
-import FooterContent from './footer-container/footer-content';  // Simplified import
+import './index.scss';
+import FooterContainer from './footer-container/Index';
+import FooterContent from './footer-container/footer-content/Index';
 
 const Footer = () => {
   return (

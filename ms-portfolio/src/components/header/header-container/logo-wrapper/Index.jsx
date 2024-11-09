@@ -1,5 +1,5 @@
 import React from 'react';
-import './LogoWrapper.scss';
+import './index.scss';
 import logo from '../../../../assets/logos/manningstinson-logo.svg';  // Path going up to src then down to assets/logos
 
 const LogoWrapper = () => {
