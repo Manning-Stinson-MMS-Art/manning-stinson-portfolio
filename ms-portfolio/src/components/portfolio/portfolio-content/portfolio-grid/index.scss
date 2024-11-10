@@ -1,0 +1,38 @@
+@use '@styles/device-styles';
+@use '@styles/variables' as *;
+@use '@styles/utility-mixins' as *;
+
+.portfolio-grid {
+  display: grid;
+  gap: 2rem;
+  padding: 2rem 0;
+  width: 100%;
+
+  // Default mobile layout (single column)
+  grid-template-columns: 1fr;
+
+  @include small {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  @include medium {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  @include large {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  @include x-large {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+
+  @include xx-large {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
