@@ -38,6 +38,20 @@
     "comment-empty-line-before": null,
     "selector-class-pattern": null,
     "alpha-value-notation": "number",
-    "font-family-name-quotes": "always-unless-keyword"
+    "font-family-name-quotes": "always-unless-keyword",
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["export"]
+      }
+    ],
+    "property-no-unknown": [
+      true,
+      {
+        "ignoreProperties": ["xsmall", "small", "medium", "large", "xlarge"]
+      }
+    ],
+    "declaration-block-single-line-max-declarations": 1,
+    "scss/no-global-function-names": null
   }
 }

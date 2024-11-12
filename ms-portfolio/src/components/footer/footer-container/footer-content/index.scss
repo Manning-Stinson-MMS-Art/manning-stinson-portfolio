@@ -1,14 +1,15 @@
-
+// src/components/footer/footer-container/footer-content/index.scss
 .footer-content {
-    display: flex;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  @include max('sm') {
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    flex: 1; /* This makes the content take up remaining space */
-    min-width: 0; /* This helps prevent overflow issues */
-    padding-top: 1vh;
-}
-@media screen and (max-width: 768px) {
-    .footer-content {
-        display: none;
-    }
+    text-align: center;
+    gap: 15px;
+  }
 }

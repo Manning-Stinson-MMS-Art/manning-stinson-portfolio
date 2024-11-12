@@ -1,5 +1,7 @@
+// _index.scss
 // src/styles/_index.scss
 @forward "@styles/device-styles";
+@forward "@styles/utility-mixins";
 @forward "@styles/variables";
 @forward "@styles/mixins";
 @forward "@styles/reset";
