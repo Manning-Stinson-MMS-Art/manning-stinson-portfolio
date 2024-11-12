@@ -128,3 +128,31 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Environment variables
+.env
+backend/etl/config/.env
+
+# Python virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*.class
+
+# Database
+*.sql
+*.sqlite
+*.sqlite3
+
+# IDE settings
+.vscode/
+.idea/
+
+# Logs
+*.log
+logs/
