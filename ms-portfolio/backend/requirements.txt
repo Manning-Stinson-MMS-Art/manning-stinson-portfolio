@@ -1,0 +1,19 @@
+# Data Processing
+pandas==2.2.0
+numpy==1.26.3
+
+# Database
+psycopg2-binary==2.9.9
+SQLAlchemy==2.0.25
+
+# API Framework
+fastapi==0.109.0
+uvicorn==0.27.0
+
+# Environment Variables
+python-dotenv==1.0.0
+
+# Optional but recommended
+pytest==7.4.4           # for testing
+black==23.12.1          # for code formatting
+pylint==3.0.3           # for linting
