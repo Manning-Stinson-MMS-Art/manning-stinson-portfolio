@@ -24,7 +24,7 @@ def db_connection():
         if not all([os.getenv('DB_HOST'), os.getenv('DB_PORT'), os.getenv('DB_NAME'), 
                    os.getenv('DB_USER'), os.getenv('DB_PASSWORD')]):
             print("ERROR: Some environment variables are missing!")
-            return
+            return None
 
         # Create connection string
         conn_string = f"postgresql://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}@{os.getenv('DB_HOST')}:{os.getenv('DB_PORT')}/{os.getenv('DB_NAME')}"
@@ -35,7 +35,8 @@ def db_connection():
         engine = create_engine(conn_string, connect_args={'sslmode': 'require'})
         with engine.connect() as connection:
             print("SQLAlchemy Connection Successful!")
-            
+            return connection
+
         # Try psycopg2 connection
         print("\nAttempting psycopg2 connection...")
         conn = psycopg2.connect(
@@ -47,12 +48,11 @@ def db_connection():
             sslmode='require'
         )
         print("Psycopg2 Connection Successful!")
-        conn.close()
+        return conn
 
     except Exception as e:
         print(f"\nConnection Failed: {str(e)}")
+        raise
 
-if __name__ == "__main__":
-    print("Main block starting...")
-    db_connection()
-    print("Script completed.")
+# Export the function
+__all__ = ['db_connection']
