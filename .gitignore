@@ -1,3 +1,5 @@
+ca-certificate.crt
+
 # Logs
 logs
 *.log
