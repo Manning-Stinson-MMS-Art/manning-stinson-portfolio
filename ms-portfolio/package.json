@@ -9,9 +9,12 @@
     "build": "vite build",
     "lint": "eslint .",
     "lint:styles": "stylelint \"src/styles/**/*.{css,scss}\"",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "create-dirs": "node scripts/create-original-dirs.js"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.693.0",
+    "@aws-sdk/lib-storage": "^3.693.0",
     "@fortawesome/fontawesome-free": "^6.6.0",
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
@@ -19,13 +22,15 @@
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "autoprefixer": "^10.4.20",
+    "dotenv": "^16.4.5",
     "font-awesome": "^4.7.0",
     "fs-extra": "^11.2.0",
     "postcss": "^8.4.47",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.27.0",
-    "tailwindcss": "^3.4.14"
+    "tailwindcss": "^3.4.14",
+    "winston": "^3.17.0"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.25.9",
