@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "lint:styles": "stylelint \"src/styles/**/*.{css,scss}\"",
     "preview": "vite preview",
-    "create-dirs": "node scripts/create-original-dirs.js"
+    "create-original-dir": "node scripts/create-original-dirs.js",
+    "create-jpg-dir": "node scripts/create-original-jpg.js"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.693.0",
