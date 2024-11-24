@@ -13,4 +13,6 @@ jobs:
         with:
           app_name: manning-portfolio-app
           token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
-          branch: main
+          cloud_name: digitalocean
+          entryPoint: digitalocean-app-platform
+          args: deploy
