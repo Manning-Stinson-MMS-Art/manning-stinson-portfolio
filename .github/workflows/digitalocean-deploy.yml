@@ -1,14 +1,16 @@
-#since organization changed
 name: DigitalOcean App Platform deployment
-
 on:
   push:
     branches:
       - main
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: DigitalOcean App Platform deployment
+      - uses: actions/checkout@v3
+      - name: Deploy to Digital Ocean
         uses: digitalocean/app_action@v2.0.6
+        with:
+          app_name: manning-portfolio-app
+          token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+          branch: main
