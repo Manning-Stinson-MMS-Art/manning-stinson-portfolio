@@ -1,0 +1,902 @@
+/* Color Theme Swatches in Hex */
+$Worthy-1-hex: #443E59;
+$Worthy-2-hex: #7573BF;
+$Worthy-3-hex: #B3BDF2;
+$Worthy-4-hex: #BFB304;
+$Worthy-5-hex: #F2EA7E;
+
+/* Color Theme Swatches in RGBA */
+$Worthy-1-rgba: rgba(68,62,89, 1);
+$Worthy-2-rgba: rgba(117,115,191, 1);
+$Worthy-3-rgba: rgba(179,189,242, 1);
+$Worthy-4-rgba: rgba(191,179,4, 1);
+$Worthy-5-rgba: rgba(242,234,126, 1);
+
+/* Color Theme Swatches in HSLA */
+$Worthy-1-hsla: hsla(253, 17, 29, 1);
+$Worthy-2-hsla: hsla(241, 37, 60, 1);
+$Worthy-3-hsla: hsla(230, 70, 82, 1);
+$Worthy-4-hsla: hsla(56, 95, 38, 1);
+$Worthy-5-hsla: hsla(55, 81, 72, 1);
+
+/* Color Theme Swatches in Hex */
+$Rising-Spirit-1-hex: #443E59;
+$Rising-Spirit-2-hex: #606EBF;
+$Rising-Spirit-3-hex: #81BF54;
+$Rising-Spirit-4-hex: #D9D04E;
+$Rising-Spirit-5-hex: #D9B13B;
+
+/* Color Theme Swatches in RGBA */
+$Rising-Spirit-1-rgba: rgba(68,62,89, 1);
+$Rising-Spirit-2-rgba: rgba(96,110,191, 1);
+$Rising-Spirit-3-rgba: rgba(129,191,84, 1);
+$Rising-Spirit-4-rgba: rgba(217,208,78, 1);
+$Rising-Spirit-5-rgba: rgba(217,177,59, 1);
+
+/* Color Theme Swatches in HSLA */
+$Rising-Spirit-1-hsla: hsla(253, 17, 29, 1);
+$Rising-Spirit-2-hsla: hsla(231, 42, 56, 1);
+$Rising-Spirit-3-hsla: hsla(94, 45, 53, 1);
+$Rising-Spirit-4-hsla: hsla(56, 64, 57, 1);
+$Rising-Spirit-5-hsla: hsla(44, 67, 54, 1);
+/* Color Theme Swatches in Hex */
+$Soul-Depths-1-hex: #341C8C;
+$Soul-Depths-2-hex: #5A58A6;
+$Soul-Depths-3-hex: #6CBAD9;
+$Soul-Depths-4-hex: #0AA67A;
+$Soul-Depths-5-hex: #F2D027;
+
+/* Color Theme Swatches in RGBA */
+$Soul-Depths-1-rgba: rgba(52,28,140, 1);
+$Soul-Depths-2-rgba: rgba(90,88,166, 1);
+$Soul-Depths-3-rgba: rgba(108,186,217, 1);
+$Soul-Depths-4-rgba: rgba(10,166,122, 1);
+$Soul-Depths-5-rgba: rgba(242,208,39, 1);
+
+/* Color Theme Swatches in HSLA */
+$Soul-Depths-1-hsla: hsla(252, 66, 32, 1);
+$Soul-Depths-2-hsla: hsla(241, 30, 49, 1);
+$Soul-Depths-3-hsla: hsla(197, 58, 63, 1);
+$Soul-Depths-4-hsla: hsla(163, 88, 34, 1);
+$Soul-Depths-5-hsla: hsla(49, 88, 55, 1);
+
+/* Color Theme Swatches in Hex */
+$Imagination-1-hex: #BF246D;
+$Imagination-2-hex: #B3BDF2;
+$Imagination-3-hex: #9DD962;
+$Imagination-4-hex: #D9B13B;
+$Imagination-5-hex: #F25F29;
+
+/* Color Theme Swatches in RGBA */
+$Imagination-1-rgba: rgba(191,36,109, 1);
+$Imagination-2-rgba: rgba(179,189,242, 1);
+$Imagination-3-rgba: rgba(157,217,98, 1);
+$Imagination-4-rgba: rgba(217,177,59, 1);
+$Imagination-5-rgba: rgba(242,95,41, 1);
+
+/* Color Theme Swatches in HSLA */
+$Imagination-1-hsla: hsla(331, 68, 44, 1);
+$Imagination-2-hsla: hsla(230, 70, 82, 1);
+$Imagination-3-hsla: hsla(90, 61, 61, 1);
+$Imagination-4-hsla: hsla(44, 67, 54, 1);
+$Imagination-5-hsla: hsla(16, 88, 55, 1);
+
+/* Color Theme Swatches in Hex */
+$Energy-&-Edge-1-hex: #F2059F;
+$Energy-&-Edge-2-hex: #F205B3;
+$Energy-&-Edge-3-hex: #EE05F2;
+$Energy-&-Edge-4-hex: #F2F2F2;
+$Energy-&-Edge-5-hex: #0D0D0D;
+
+/* Color Theme Swatches in RGBA */
+$Energy-&-Edge-1-rgba: rgba(242,5,159, 1);
+$Energy-&-Edge-2-rgba: rgba(242,5,179, 1);
+$Energy-&-Edge-3-rgba: rgba(238,5,242, 1);
+$Energy-&-Edge-4-rgba: rgba(242,242,242, 1);
+$Energy-&-Edge-5-rgba: rgba(13,13,13, 1);
+
+/* Color Theme Swatches in HSLA */
+$Energy-&-Edge-1-hsla: hsla(321, 95, 48, 1);
+$Energy-&-Edge-2-hsla: hsla(315, 95, 48, 1);
+$Energy-&-Edge-3-hsla: hsla(298, 95, 48, 1);
+$Energy-&-Edge-4-hsla: hsla(0, 0, 94, 1);
+$Energy-&-Edge-5-hsla: hsla(0, 0, 5, 1);
+
+/* Color Theme Swatches in Hex */
+$Deep-Pain-1-hex: #D94E73;
+$Deep-Pain-2-hex: #8086F2;
+$Deep-Pain-3-hex: #4E98D9;
+$Deep-Pain-4-hex: #72E5F2;
+$Deep-Pain-5-hex: #D9CC14;
+
+/* Color Theme Swatches in RGBA */
+$Deep-Pain-1-rgba: rgba(217,78,115, 1);
+$Deep-Pain-2-rgba: rgba(128,134,242, 1);
+$Deep-Pain-3-rgba: rgba(78,152,217, 1);
+$Deep-Pain-4-rgba: rgba(114,229,242, 1);
+$Deep-Pain-5-rgba: rgba(217,204,20, 1);
+
+/* Color Theme Swatches in HSLA */
+$Deep-Pain-1-hsla: hsla(344, 64, 57, 1);
+$Deep-Pain-2-hsla: hsla(236, 81, 72, 1);
+$Deep-Pain-3-hsla: hsla(208, 64, 57, 1);
+$Deep-Pain-4-hsla: hsla(186, 83, 69, 1);
+$Deep-Pain-5-hsla: hsla(56, 83, 46, 1);
+
+/* Color Theme Swatches in Hex */
+$Hope---Black-&-White-1-hex: #F2F2F2;
+$Hope---Black-&-White-2-hex: #A6A6A6;
+$Hope---Black-&-White-3-hex: #595959;
+$Hope---Black-&-White-4-hex: #262626;
+$Hope---Black-&-White-5-hex: #0D0D0D;
+
+/* Color Theme Swatches in RGBA */
+$Hope---Black-&-White-1-rgba: rgba(242,242,242, 1);
+$Hope---Black-&-White-2-rgba: rgba(166,166,166, 1);
+$Hope---Black-&-White-3-rgba: rgba(89,89,89, 1);
+$Hope---Black-&-White-4-rgba: rgba(38,38,38, 1);
+$Hope---Black-&-White-5-rgba: rgba(13,13,13, 1);
+
+/* Color Theme Swatches in HSLA */
+$Hope---Black-&-White-1-hsla: hsla(0, 0, 94, 1);
+$Hope---Black-&-White-2-hsla: hsla(0, 0, 65, 1);
+$Hope---Black-&-White-3-hsla: hsla(0, 0, 34, 1);
+$Hope---Black-&-White-4-hsla: hsla(0, 0, 14, 1);
+$Hope---Black-&-White-5-hsla: hsla(0, 0, 5, 1);
+
+/* Color Theme Swatches in Hex */
+$Heart-Blood-1-hex: #F24182;
+$Heart-Blood-2-hex: #BF3978;
+$Heart-Blood-3-hex: #8C326D;
+$Heart-Blood-4-hex: #F2D5EA;
+$Heart-Blood-5-hex: #022859;
+
+/* Color Theme Swatches in RGBA */
+$Heart-Blood-1-rgba: rgba(242,65,130, 1);
+$Heart-Blood-2-rgba: rgba(191,57,120, 1);
+$Heart-Blood-3-rgba: rgba(140,50,109, 1);
+$Heart-Blood-4-rgba: rgba(242,213,234, 1);
+$Heart-Blood-5-rgba: rgba(2,40,89, 1);
+
+/* Color Theme Swatches in HSLA */
+$Heart-Blood-1-hsla: hsla(337, 87, 60, 1);
+$Heart-Blood-2-hsla: hsla(331, 54, 48, 1);
+$Heart-Blood-3-hsla: hsla(320, 47, 37, 1);
+$Heart-Blood-4-hsla: hsla(316, 52, 89, 1);
+$Heart-Blood-5-hsla: hsla(213, 95, 17, 1);
+
+/* Color Theme Swatches in Hex */
+$Focus-1-hex: #333740;
+$Focus-2-hex: #436573;
+$Focus-3-hex: #F2F2F0;
+$Focus-4-hex: #D9AD29;
+$Focus-5-hex: #D99B29;
+
+/* Color Theme Swatches in RGBA */
+$Focus-1-rgba: rgba(51,55,64, 1);
+$Focus-2-rgba: rgba(67,101,115, 1);
+$Focus-3-rgba: rgba(242,242,240, 1);
+$Focus-4-rgba: rgba(217,173,41, 1);
+$Focus-5-rgba: rgba(217,155,41, 1);
+
+/* Color Theme Swatches in HSLA */
+$Focus-1-hsla: hsla(221, 11, 22, 1);
+$Focus-2-hsla: hsla(197, 26, 35, 1);
+$Focus-3-hsla: hsla(60, 7, 94, 1);
+$Focus-4-hsla: hsla(45, 69, 50, 1);
+$Focus-5-hsla: hsla(38, 69, 50, 1);
+
+/* Color Theme Swatches in Hex */
+$Pink-Flow-Original-1-hex: #8C1864;
+$Pink-Flow-Original-2-hex: #BF308D;
+$Pink-Flow-Original-3-hex: #D984BB;
+$Pink-Flow-Original-4-hex: #F2D0E6;
+$Pink-Flow-Original-5-hex: #0D0D0D;
+
+/* Color Theme Swatches in RGBA */
+$Pink-Flow-Original-1-rgba: rgba(140,24,100, 1);
+$Pink-Flow-Original-2-rgba: rgba(191,48,141, 1);
+$Pink-Flow-Original-3-rgba: rgba(217,132,187, 1);
+$Pink-Flow-Original-4-rgba: rgba(242,208,230, 1);
+$Pink-Flow-Original-5-rgba: rgba(13,13,13, 1);
+
+/* Color Theme Swatches in HSLA */
+$Pink-Flow-Original-1-hsla: hsla(320, 70, 32, 1);
+$Pink-Flow-Original-2-hsla: hsla(320, 59, 46, 1);
+$Pink-Flow-Original-3-hsla: hsla(321, 52, 68, 1);
+$Pink-Flow-Original-4-hsla: hsla(321, 56, 88, 1);
+$Pink-Flow-Original-5-hsla: hsla(0, 0, 5, 1);
+
+/* Color Theme Swatches in Hex */
+$Red-Velvet-1-hex: #BF0A4C;
+$Red-Velvet-2-hex: #BF065C;
+$Red-Velvet-3-hex: #401E37;
+$Red-Velvet-4-hex: #A9D9B5;
+$Red-Velvet-5-hex: #F2C299;
+
+/* Color Theme Swatches in RGBA */
+$Red-Velvet-1-rgba: rgba(191,10,76, 1);
+$Red-Velvet-2-rgba: rgba(191,6,92, 1);
+$Red-Velvet-3-rgba: rgba(64,30,55, 1);
+$Red-Velvet-4-rgba: rgba(169,217,181, 1);
+$Red-Velvet-5-rgba: rgba(242,194,153, 1);
+
+/* Color Theme Swatches in HSLA */
+$Red-Velvet-1-hsla: hsla(338, 90, 39, 1);
+$Red-Velvet-2-hsla: hsla(332, 93, 38, 1);
+$Red-Velvet-3-hsla: hsla(315, 36, 18, 1);
+$Red-Velvet-4-hsla: hsla(135, 38, 75, 1);
+$Red-Velvet-5-hsla: hsla(27, 77, 77, 1);
+
+/* Color Theme Swatches in Hex */
+$Happiness-1-hex: #BF246D;
+$Happiness-2-hex: #606EBF;
+$Happiness-3-hex: #9DD962;
+$Happiness-4-hex: #D5D95F;
+$Happiness-5-hex: #F25F29;
+
+/* Color Theme Swatches in RGBA */
+$Happiness-1-rgba: rgba(191,36,109, 1);
+$Happiness-2-rgba: rgba(96,110,191, 1);
+$Happiness-3-rgba: rgba(157,217,98, 1);
+$Happiness-4-rgba: rgba(213,217,95, 1);
+$Happiness-5-rgba: rgba(242,95,41, 1);
+
+/* Color Theme Swatches in HSLA */
+$Happiness-1-hsla: hsla(331, 68, 44, 1);
+$Happiness-2-hsla: hsla(231, 42, 56, 1);
+$Happiness-3-hsla: hsla(90, 61, 61, 1);
+$Happiness-4-hsla: hsla(61, 61, 61, 1);
+$Happiness-5-hsla: hsla(16, 88, 55, 1);
+
+/* Color Theme Swatches in Hex */
+$Flames-1-hex: #BF0449;
+$Flames-2-hex: #BF045B;
+$Flames-3-hex: #F28241;
+$Flames-4-hex: #F25A38;
+$Flames-5-hex: #F23535;
+
+/* Color Theme Swatches in RGBA */
+$Flames-1-rgba: rgba(191,4,73, 1);
+$Flames-2-rgba: rgba(191,4,91, 1);
+$Flames-3-rgba: rgba(242,130,65, 1);
+$Flames-4-rgba: rgba(242,90,56, 1);
+$Flames-5-rgba: rgba(242,53,53, 1);
+
+/* Color Theme Swatches in HSLA */
+$Flames-1-hsla: hsla(337, 95, 38, 1);
+$Flames-2-hsla: hsla(332, 95, 38, 1);
+$Flames-3-hsla: hsla(22, 87, 60, 1);
+$Flames-4-hsla: hsla(10, 87, 58, 1);
+$Flames-5-hsla: hsla(0, 87, 57, 1);
+
+/* Color Theme Swatches in Hex */
+$Molten-Forest-1-hex: #BF046B;
+$Molten-Forest-2-hex: #2C3359;
+$Molten-Forest-3-hex: #84A651;
+$Molten-Forest-4-hex: #D9BA5F;
+$Molten-Forest-5-hex: #D96E30;
+
+/* Color Theme Swatches in RGBA */
+$Molten-Forest-1-rgba: rgba(191,4,107, 1);
+$Molten-Forest-2-rgba: rgba(44,51,89, 1);
+$Molten-Forest-3-rgba: rgba(132,166,81, 1);
+$Molten-Forest-4-rgba: rgba(217,186,95, 1);
+$Molten-Forest-5-rgba: rgba(217,110,48, 1);
+
+/* Color Theme Swatches in HSLA */
+$Molten-Forest-1-hsla: hsla(326, 95, 38, 1);
+$Molten-Forest-2-hsla: hsla(230, 33, 26, 1);
+$Molten-Forest-3-hsla: hsla(83, 34, 48, 1);
+$Molten-Forest-4-hsla: hsla(44, 61, 61, 1);
+$Molten-Forest-5-hsla: hsla(22, 68, 51, 1);
+
+/* Color Theme Swatches in Hex */
+$Love-Original-1-hex: #D91E63;
+$Love-Original-2-hex: #F2E96B;
+$Love-Original-3-hex: #F2B749;
+$Love-Original-4-hex: #F28749;
+$Love-Original-5-hex: #D94E4E;
+
+/* Color Theme Swatches in RGBA */
+$Love-Original-1-rgba: rgba(217,30,99, 1);
+$Love-Original-2-rgba: rgba(242,233,107, 1);
+$Love-Original-3-rgba: rgba(242,183,73, 1);
+$Love-Original-4-rgba: rgba(242,135,73, 1);
+$Love-Original-5-rgba: rgba(217,78,78, 1);
+
+/* Color Theme Swatches in HSLA */
+$Love-Original-1-hsla: hsla(337, 75, 48, 1);
+$Love-Original-2-hsla: hsla(56, 83, 68, 1);
+$Love-Original-3-hsla: hsla(39, 86, 61, 1);
+$Love-Original-4-hsla: hsla(22, 86, 61, 1);
+$Love-Original-5-hsla: hsla(0, 64, 57, 1);
+
+/* Color Theme Swatches in Hex */
+$Small-Details-1-hex: #443E59;
+$Small-Details-2-hex: #B3BDF2;
+$Small-Details-3-hex: #D5D95F;
+$Small-Details-4-hex: #F2F0CE;
+$Small-Details-5-hex: #D9B13B;
+
+/* Color Theme Swatches in RGBA */
+$Small-Details-1-rgba: rgba(68,62,89, 1);
+$Small-Details-2-rgba: rgba(179,189,242, 1);
+$Small-Details-3-rgba: rgba(213,217,95, 1);
+$Small-Details-4-rgba: rgba(242,240,206, 1);
+$Small-Details-5-rgba: rgba(217,177,59, 1);
+
+/* Color Theme Swatches in HSLA */
+$Small-Details-1-hsla: hsla(253, 17, 29, 1);
+$Small-Details-2-hsla: hsla(230, 70, 82, 1);
+$Small-Details-3-hsla: hsla(61, 61, 61, 1);
+$Small-Details-4-hsla: hsla(56, 58, 87, 1);
+$Small-Details-5-hsla: hsla(44, 67, 54, 1);
+
+/* Color Theme Swatches in Hex */
+$Peace-1-hex: #D94350;
+$Peace-2-hex: #03A6A6;
+$Peace-3-hex: #9CD9D9;
+$Peace-4-hex: #F25A38;
+$Peace-5-hex: #D91414;
+
+/* Color Theme Swatches in RGBA */
+$Peace-1-rgba: rgba(217,67,80, 1);
+$Peace-2-rgba: rgba(3,166,166, 1);
+$Peace-3-rgba: rgba(156,217,217, 1);
+$Peace-4-rgba: rgba(242,90,56, 1);
+$Peace-5-rgba: rgba(217,20,20, 1);
+
+/* Color Theme Swatches in HSLA */
+$Peace-1-hsla: hsla(354, 66, 55, 1);
+$Peace-2-hsla: hsla(180, 96, 33, 1);
+$Peace-3-hsla: hsla(180, 44, 73, 1);
+$Peace-4-hsla: hsla(10, 87, 58, 1);
+$Peace-5-hsla: hsla(0, 83, 46, 1);
+
+/* Color Theme Swatches in Hex */
+$Twirls-1-hex: #225473;
+$Twirls-2-hex: #17A6A6;
+$Twirls-3-hex: #AEF2F2;
+$Twirls-4-hex: #E8F2D8;
+$Twirls-5-hex: #F27405;
+
+/* Color Theme Swatches in RGBA */
+$Twirls-1-rgba: rgba(34,84,115, 1);
+$Twirls-2-rgba: rgba(23,166,166, 1);
+$Twirls-3-rgba: rgba(174,242,242, 1);
+$Twirls-4-rgba: rgba(232,242,216, 1);
+$Twirls-5-rgba: rgba(242,116,5, 1);
+
+/* Color Theme Swatches in HSLA */
+$Twirls-1-hsla: hsla(202, 54, 29, 1);
+$Twirls-2-hsla: hsla(180, 75, 37, 1);
+$Twirls-3-hsla: hsla(180, 72, 81, 1);
+$Twirls-4-hsla: hsla(83, 49, 89, 1);
+$Twirls-5-hsla: hsla(28, 95, 48, 1);
+
+/* Color Theme Swatches in Hex */
+$Trust-1-hex: #03588C;
+$Trust-2-hex: #395D73;
+$Trust-3-hex: #73B2D9;
+$Trust-4-hex: #2983A6;
+$Trust-5-hex: #ADCCD9;
+
+/* Color Theme Swatches in RGBA */
+$Trust-1-rgba: rgba(3,88,140, 1);
+$Trust-2-rgba: rgba(57,93,115, 1);
+$Trust-3-rgba: rgba(115,178,217, 1);
+$Trust-4-rgba: rgba(41,131,166, 1);
+$Trust-5-rgba: rgba(173,204,217, 1);
+
+/* Color Theme Swatches in HSLA */
+$Trust-1-hsla: hsla(202, 95, 28, 1);
+$Trust-2-hsla: hsla(202, 33, 33, 1);
+$Trust-3-hsla: hsla(202, 57, 65, 1);
+$Trust-4-hsla: hsla(196, 60, 40, 1);
+$Trust-5-hsla: hsla(197, 36, 76, 1);
+
+/* Color Theme Swatches in Hex */
+$Alive-1-hex: #4A608C;
+$Alive-2-hex: #6F8ABF;
+$Alive-3-hex: #C9E2F2;
+$Alive-4-hex: #F25D07;
+$Alive-5-hex: #F24B0F;
+
+/* Color Theme Swatches in RGBA */
+$Alive-1-rgba: rgba(74,96,140, 1);
+$Alive-2-rgba: rgba(111,138,191, 1);
+$Alive-3-rgba: rgba(201,226,242, 1);
+$Alive-4-rgba: rgba(242,93,7, 1);
+$Alive-5-rgba: rgba(242,75,15, 1);
+
+/* Color Theme Swatches in HSLA */
+$Alive-1-hsla: hsla(220, 30, 41, 1);
+$Alive-2-hsla: hsla(219, 38, 59, 1);
+$Alive-3-hsla: hsla(203, 61, 86, 1);
+$Alive-4-hsla: hsla(21, 94, 48, 1);
+$Alive-5-hsla: hsla(15, 89, 50, 1);
+
+/* Color Theme Swatches in Hex */
+$Northern-Lights-1-hex: #58A690;
+$Northern-Lights-2-hex: #77A699;
+$Northern-Lights-3-hex: #99BF73;
+$Northern-Lights-4-hex: #B6D96A;
+$Northern-Lights-5-hex: #D3F263;
+
+/* Color Theme Swatches in RGBA */
+$Northern-Lights-1-rgba: rgba(88,166,144, 1);
+$Northern-Lights-2-rgba: rgba(119,166,153, 1);
+$Northern-Lights-3-rgba: rgba(153,191,115, 1);
+$Northern-Lights-4-rgba: rgba(182,217,106, 1);
+$Northern-Lights-5-rgba: rgba(211,242,99, 1);
+
+/* Color Theme Swatches in HSLA */
+$Northern-Lights-1-hsla: hsla(163, 30, 49, 1);
+$Northern-Lights-2-hsla: hsla(163, 20, 55, 1);
+$Northern-Lights-3-hsla: hsla(90, 37, 60, 1);
+$Northern-Lights-4-hsla: hsla(78, 59, 63, 1);
+$Northern-Lights-5-hsla: hsla(73, 84, 66, 1);
+
+/* Color Theme Swatches in Hex */
+$Cotton-Candy-1-hex: #F2C4E2;
+$Cotton-Candy-2-hex: #F280D4;
+$Cotton-Candy-3-hex: #304F8C;
+$Cotton-Candy-4-hex: #52B3D9;
+$Cotton-Candy-5-hex: #1C3640;
+
+/* Color Theme Swatches in RGBA */
+$Cotton-Candy-1-rgba: rgba(242,196,226, 1);
+$Cotton-Candy-2-rgba: rgba(242,128,212, 1);
+$Cotton-Candy-3-rgba: rgba(48,79,140, 1);
+$Cotton-Candy-4-rgba: rgba(82,179,217, 1);
+$Cotton-Candy-5-rgba: rgba(28,54,64, 1);
+
+/* Color Theme Swatches in HSLA */
+$Cotton-Candy-1-hsla: hsla(320, 63, 85, 1);
+$Cotton-Candy-2-hsla: hsla(315, 81, 72, 1);
+$Cotton-Candy-3-hsla: hsla(219, 48, 36, 1);
+$Cotton-Candy-4-hsla: hsla(196, 63, 58, 1);
+$Cotton-Candy-5-hsla: hsla(196, 39, 18, 1);
+
+/* Color Theme Swatches in Hex */
+$Fall-Harvest-1-hex: #F2BF27;
+$Fall-Harvest-2-hex: #F2A922;
+$Fall-Harvest-3-hex: #F27507;
+$Fall-Harvest-4-hex: #F25D07;
+$Fall-Harvest-5-hex: #A61508;
+
+/* Color Theme Swatches in RGBA */
+$Fall-Harvest-1-rgba: rgba(242,191,39, 1);
+$Fall-Harvest-2-rgba: rgba(242,169,34, 1);
+$Fall-Harvest-3-rgba: rgba(242,117,7, 1);
+$Fall-Harvest-4-rgba: rgba(242,93,7, 1);
+$Fall-Harvest-5-rgba: rgba(166,21,8, 1);
+
+/* Color Theme Swatches in HSLA */
+$Fall-Harvest-1-hsla: hsla(44, 88, 55, 1);
+$Fall-Harvest-2-hsla: hsla(38, 88, 54, 1);
+$Fall-Harvest-3-hsla: hsla(28, 94, 48, 1);
+$Fall-Harvest-4-hsla: hsla(21, 94, 48, 1);
+$Fall-Harvest-5-hsla: hsla(4, 90, 34, 1);
+
+/* Color Theme Swatches in Hex */
+$Neon-Dreams-1-hex: #BF246D;
+$Neon-Dreams-2-hex: #4E5BA6;
+$Neon-Dreams-3-hex: #CAF272;
+$Neon-Dreams-4-hex: #F2994B;
+$Neon-Dreams-5-hex: #F25A38;
+
+/* Color Theme Swatches in RGBA */
+$Neon-Dreams-1-rgba: rgba(191,36,109, 1);
+$Neon-Dreams-2-rgba: rgba(78,91,166, 1);
+$Neon-Dreams-3-rgba: rgba(202,242,114, 1);
+$Neon-Dreams-4-rgba: rgba(242,153,75, 1);
+$Neon-Dreams-5-rgba: rgba(242,90,56, 1);
+
+/* Color Theme Swatches in HSLA */
+$Neon-Dreams-1-hsla: hsla(331, 68, 44, 1);
+$Neon-Dreams-2-hsla: hsla(231, 36, 47, 1);
+$Neon-Dreams-3-hsla: hsla(78, 83, 69, 1);
+$Neon-Dreams-4-hsla: hsla(28, 86, 62, 1);
+$Neon-Dreams-5-hsla: hsla(10, 87, 58, 1);
+
+/* Color Theme Swatches in Hex */
+$Mind-Map-1-hex: #A6657D;
+$Mind-Map-2-hex: #2C2940;
+$Mind-Map-3-hex: #224A59;
+$Mind-Map-4-hex: #BFA678;
+$Mind-Map-5-hex: #F2F2F2;
+
+/* Color Theme Swatches in RGBA */
+$Mind-Map-1-rgba: rgba(166,101,125, 1);
+$Mind-Map-2-rgba: rgba(44,41,64, 1);
+$Mind-Map-3-rgba: rgba(34,74,89, 1);
+$Mind-Map-4-rgba: rgba(191,166,120, 1);
+$Mind-Map-5-rgba: rgba(242,242,242, 1);
+
+/* Color Theme Swatches in HSLA */
+$Mind-Map-1-hsla: hsla(337, 26, 52, 1);
+$Mind-Map-2-hsla: hsla(247, 21, 20, 1);
+$Mind-Map-3-hsla: hsla(196, 44, 24, 1);
+$Mind-Map-4-hsla: hsla(38, 35, 60, 1);
+$Mind-Map-5-hsla: hsla(0, 0, 94, 1);
+
+/* Color Theme Swatches in Hex */
+$The-Y-1-hex: #D91A96;
+$The-Y-2-hex: #0F8AA6;
+$The-Y-3-hex: #77D9C7;
+$The-Y-4-hex: #F2D338;
+$The-Y-5-hex: #F2522E;
+
+/* Color Theme Swatches in RGBA */
+$The-Y-1-rgba: rgba(217,26,150, 1);
+$The-Y-2-rgba: rgba(15,138,166, 1);
+$The-Y-3-rgba: rgba(119,217,199, 1);
+$The-Y-4-rgba: rgba(242,211,56, 1);
+$The-Y-5-rgba: rgba(242,82,46, 1);
+
+/* Color Theme Swatches in HSLA */
+$The-Y-1-hsla: hsla(321, 78, 47, 1);
+$The-Y-2-hsla: hsla(191, 83, 35, 1);
+$The-Y-3-hsla: hsla(168, 56, 65, 1);
+$The-Y-4-hsla: hsla(49, 87, 58, 1);
+$The-Y-5-hsla: hsla(11, 88, 56, 1);
+
+/* Color Theme Swatches in Hex */
+$Sprouts-1-hex: #2DA69A;
+$Sprouts-2-hex: #A0D9C4;
+$Sprouts-3-hex: #98D936;
+$Sprouts-4-hex: #F2E749;
+$Sprouts-5-hex: #F2F2F2;
+
+/* Color Theme Swatches in RGBA */
+$Sprouts-1-rgba: rgba(45,166,154, 1);
+$Sprouts-2-rgba: rgba(160,217,196, 1);
+$Sprouts-3-rgba: rgba(152,217,54, 1);
+$Sprouts-4-rgba: rgba(242,231,73, 1);
+$Sprouts-5-rgba: rgba(242,242,242, 1);
+
+/* Color Theme Swatches in HSLA */
+$Sprouts-1-hsla: hsla(174, 57, 41, 1);
+$Sprouts-2-hsla: hsla(157, 42, 73, 1);
+$Sprouts-3-hsla: hsla(83, 68, 53, 1);
+$Sprouts-4-hsla: hsla(56, 86, 61, 1);
+$Sprouts-5-hsla: hsla(0, 0, 94, 1);
+
+/* Color Theme Swatches in Hex */
+$Immersion-1-hex: #BF3B5E;
+$Immersion-2-hex: #4C3F59;
+$Immersion-3-hex: #D5D96A;
+$Immersion-4-hex: #D99C52;
+$Immersion-5-hex: #D9593D;
+
+/* Color Theme Swatches in RGBA */
+$Immersion-1-rgba: rgba(191,59,94, 1);
+$Immersion-2-rgba: rgba(76,63,89, 1);
+$Immersion-3-rgba: rgba(213,217,106, 1);
+$Immersion-4-rgba: rgba(217,156,82, 1);
+$Immersion-5-rgba: rgba(217,89,61, 1);
+
+/* Color Theme Swatches in HSLA */
+$Immersion-1-hsla: hsla(344, 52, 49, 1);
+$Immersion-2-hsla: hsla(270, 17, 29, 1);
+$Immersion-3-hsla: hsla(62, 59, 63, 1);
+$Immersion-4-hsla: hsla(32, 63, 58, 1);
+$Immersion-5-hsla: hsla(10, 67, 54, 1);
+
+/* Color Theme Swatches in Hex */
+$Flow-1-hex: #BF246D;
+$Flow-2-hex: #4A96D9;
+$Flow-3-hex: #9FBF2C;
+$Flow-4-hex: #D9A74A;
+$Flow-5-hex: #F25F29;
+
+/* Color Theme Swatches in RGBA */
+$Flow-1-rgba: rgba(191,36,109, 1);
+$Flow-2-rgba: rgba(74,150,217, 1);
+$Flow-3-rgba: rgba(159,191,44, 1);
+$Flow-4-rgba: rgba(217,167,74, 1);
+$Flow-5-rgba: rgba(242,95,41, 1);
+
+/* Color Theme Swatches in HSLA */
+$Flow-1-hsla: hsla(331, 68, 44, 1);
+$Flow-2-hsla: hsla(208, 65, 57, 1);
+$Flow-3-hsla: hsla(73, 62, 46, 1);
+$Flow-4-hsla: hsla(39, 65, 57, 1);
+$Flow-5-hsla: hsla(16, 88, 55, 1);
+
+/* Color Theme Swatches in Hex */
+$Springtime-1-hex: #D91E75;
+$Springtime-2-hex: #BF4980;
+$Springtime-3-hex: #F252AA;
+$Springtime-4-hex: #F2B6DD;
+$Springtime-5-hex: #F2D5EA;
+
+/* Color Theme Swatches in RGBA */
+$Springtime-1-rgba: rgba(217,30,117, 1);
+$Springtime-2-rgba: rgba(191,73,128, 1);
+$Springtime-3-rgba: rgba(242,82,170, 1);
+$Springtime-4-rgba: rgba(242,182,221, 1);
+$Springtime-5-rgba: rgba(242,213,234, 1);
+
+/* Color Theme Swatches in HSLA */
+$Springtime-1-hsla: hsla(332, 75, 48, 1);
+$Springtime-2-hsla: hsla(332, 47, 51, 1);
+$Springtime-3-hsla: hsla(327, 86, 63, 1);
+$Springtime-4-hsla: hsla(321, 69, 83, 1);
+$Springtime-5-hsla: hsla(316, 52, 89, 1);
+
+/* Color Theme Swatches in Hex */
+$Blue-Lagoon-1-hex: #3E3659;
+$Blue-Lagoon-2-hex: #424659;
+$Blue-Lagoon-3-hex: #35748C;
+$Blue-Lagoon-4-hex: #29B9D9;
+$Blue-Lagoon-5-hex: #29C7D9;
+
+/* Color Theme Swatches in RGBA */
+$Blue-Lagoon-1-rgba: rgba(62,54,89, 1);
+$Blue-Lagoon-2-rgba: rgba(66,70,89, 1);
+$Blue-Lagoon-3-rgba: rgba(53,116,140, 1);
+$Blue-Lagoon-4-rgba: rgba(41,185,217, 1);
+$Blue-Lagoon-5-rgba: rgba(41,199,217, 1);
+
+/* Color Theme Swatches in HSLA */
+$Blue-Lagoon-1-hsla: hsla(253, 24, 28, 1);
+$Blue-Lagoon-2-hsla: hsla(229, 14, 30, 1);
+$Blue-Lagoon-3-hsla: hsla(196, 45, 37, 1);
+$Blue-Lagoon-4-hsla: hsla(190, 69, 50, 1);
+$Blue-Lagoon-5-hsla: hsla(186, 69, 50, 1);
+
+/* Color Theme Swatches in Hex */
+$In-the-tropics-1-hex: #BF246D;
+$In-the-tropics-2-hex: #4E5BA6;
+$In-the-tropics-3-hex: #81BF54;
+$In-the-tropics-4-hex: #D5D95F;
+$In-the-tropics-5-hex: #F25F29;
+
+/* Color Theme Swatches in RGBA */
+$In-the-tropics-1-rgba: rgba(191,36,109, 1);
+$In-the-tropics-2-rgba: rgba(78,91,166, 1);
+$In-the-tropics-3-rgba: rgba(129,191,84, 1);
+$In-the-tropics-4-rgba: rgba(213,217,95, 1);
+$In-the-tropics-5-rgba: rgba(242,95,41, 1);
+
+/* Color Theme Swatches in HSLA */
+$In-the-tropics-1-hsla: hsla(331, 68, 44, 1);
+$In-the-tropics-2-hsla: hsla(231, 36, 47, 1);
+$In-the-tropics-3-hsla: hsla(94, 45, 53, 1);
+$In-the-tropics-4-hsla: hsla(61, 61, 61, 1);
+$In-the-tropics-5-hsla: hsla(16, 88, 55, 1);
+
+/* Color Theme Swatches in Hex */
+$Flow-1-hex: #F23054;
+$Flow-2-hex: #BF246D;
+$Flow-3-hex: #343D73;
+$Flow-4-hex: #CAF272;
+$Flow-5-hex: #D5D95F;
+
+/* Color Theme Swatches in RGBA */
+$Flow-1-rgba: rgba(242,48,84, 1);
+$Flow-2-rgba: rgba(191,36,109, 1);
+$Flow-3-rgba: rgba(52,61,115, 1);
+$Flow-4-rgba: rgba(202,242,114, 1);
+$Flow-5-rgba: rgba(213,217,95, 1);
+
+/* Color Theme Swatches in HSLA */
+$Flow-1-hsla: hsla(348, 88, 56, 1);
+$Flow-2-hsla: hsla(331, 68, 44, 1);
+$Flow-3-hsla: hsla(231, 37, 32, 1);
+$Flow-4-hsla: hsla(78, 83, 69, 1);
+$Flow-5-hsla: hsla(61, 61, 61, 1);
+
+/* Color Theme Swatches in Hex */
+$Affirmation-1-hex: #369AD9;
+$Affirmation-2-hex: #9FBF2C;
+$Affirmation-3-hex: #D9CB04;
+$Affirmation-4-hex: #F29E38;
+$Affirmation-5-hex: #F25A38;
+
+/* Color Theme Swatches in RGBA */
+$Affirmation-1-rgba: rgba(54,154,217, 1);
+$Affirmation-2-rgba: rgba(159,191,44, 1);
+$Affirmation-3-rgba: rgba(217,203,4, 1);
+$Affirmation-4-rgba: rgba(242,158,56, 1);
+$Affirmation-5-rgba: rgba(242,90,56, 1);
+
+/* Color Theme Swatches in HSLA */
+$Affirmation-1-hsla: hsla(203, 68, 53, 1);
+$Affirmation-2-hsla: hsla(73, 62, 46, 1);
+$Affirmation-3-hsla: hsla(56, 96, 43, 1);
+$Affirmation-4-hsla: hsla(32, 87, 58, 1);
+$Affirmation-5-hsla: hsla(10, 87, 58, 1);
+
+/* Color Theme Swatches in Hex */
+$Scribbles-1-hex: #F2F2F2;
+$Scribbles-2-hex: #BFBFBF;
+$Scribbles-3-hex: #8C8C8C;
+$Scribbles-4-hex: #595959;
+$Scribbles-5-hex: #262626;
+
+/* Color Theme Swatches in RGBA */
+$Scribbles-1-rgba: rgba(242,242,242, 1);
+$Scribbles-2-rgba: rgba(191,191,191, 1);
+$Scribbles-3-rgba: rgba(140,140,140, 1);
+$Scribbles-4-rgba: rgba(89,89,89, 1);
+$Scribbles-5-rgba: rgba(38,38,38, 1);
+
+/* Color Theme Swatches in HSLA */
+$Scribbles-1-hsla: hsla(0, 0, 94, 1);
+$Scribbles-2-hsla: hsla(0, 0, 74, 1);
+$Scribbles-3-hsla: hsla(0, 0, 54, 1);
+$Scribbles-4-hsla: hsla(0, 0, 34, 1);
+$Scribbles-5-hsla: hsla(0, 0, 14, 1);
+
+/* Color Theme Swatches in Hex */
+$Rust-&-Shadows-1-hex: #1D5359;
+$Rust-&-Shadows-2-hex: #595022;
+$Rust-&-Shadows-3-hex: #F29441;
+$Rust-&-Shadows-4-hex: #F26A4B;
+$Rust-&-Shadows-5-hex: #D95448;
+
+/* Color Theme Swatches in RGBA */
+$Rust-&-Shadows-1-rgba: rgba(29,83,89, 1);
+$Rust-&-Shadows-2-rgba: rgba(89,80,34, 1);
+$Rust-&-Shadows-3-rgba: rgba(242,148,65, 1);
+$Rust-&-Shadows-4-rgba: rgba(242,106,75, 1);
+$Rust-&-Shadows-5-rgba: rgba(217,84,72, 1);
+
+/* Color Theme Swatches in HSLA */
+$Rust-&-Shadows-1-hsla: hsla(185, 50, 23, 1);
+$Rust-&-Shadows-2-hsla: hsla(50, 44, 24, 1);
+$Rust-&-Shadows-3-hsla: hsla(28, 87, 60, 1);
+$Rust-&-Shadows-4-hsla: hsla(11, 86, 62, 1);
+$Rust-&-Shadows-5-hsla: hsla(4, 65, 56, 1);
+
+/* Color Theme Swatches in Hex */
+$3K-1-hex: #7E778C;
+$3K-2-hex: #393E59;
+$3K-3-hex: #111626;
+$3K-4-hex: #F2F2F2;
+$3K-5-hex: #9FB6BF;
+
+/* Color Theme Swatches in RGBA */
+$3K-1-rgba: rgba(126,119,140, 1);
+$3K-2-rgba: rgba(57,62,89, 1);
+$3K-3-rgba: rgba(17,22,38, 1);
+$3K-4-rgba: rgba(242,242,242, 1);
+$3K-5-rgba: rgba(159,182,191, 1);
+
+/* Color Theme Swatches in HSLA */
+$3K-1-hsla: hsla(260, 8, 50, 1);
+$3K-2-hsla: hsla(230, 21, 28, 1);
+$3K-3-hsla: hsla(225, 38, 10, 1);
+$3K-4-hsla: hsla(0, 0, 94, 1);
+$3K-5-hsla: hsla(196, 20, 68, 1);
+
+/* Color Theme Swatches in Hex */
+$Tell-The-Truth-1-hex: #BF303C;
+$Tell-The-Truth-2-hex: #D96C75;
+$Tell-The-Truth-3-hex: #260101;
+$Tell-The-Truth-4-hex: #F2F2F2;
+$Tell-The-Truth-5-hex: #0D0D0D;
+
+/* Color Theme Swatches in RGBA */
+$Tell-The-Truth-1-rgba: rgba(191,48,60, 1);
+$Tell-The-Truth-2-rgba: rgba(217,108,117, 1);
+$Tell-The-Truth-3-rgba: rgba(38,1,1, 1);
+$Tell-The-Truth-4-rgba: rgba(242,242,242, 1);
+$Tell-The-Truth-5-rgba: rgba(13,13,13, 1);
+
+/* Color Theme Swatches in HSLA */
+$Tell-The-Truth-1-hsla: hsla(354, 59, 46, 1);
+$Tell-The-Truth-2-hsla: hsla(355, 58, 63, 1);
+$Tell-The-Truth-3-hsla: hsla(0, 94, 7, 1);
+$Tell-The-Truth-4-hsla: hsla(0, 0, 94, 1);
+$Tell-The-Truth-5-hsla: hsla(0, 0, 5, 1);
+
+/* Color Theme Swatches in Hex */
+$Believe-1-hex: #4178BF;
+$Believe-2-hex: #41AED9;
+$Believe-3-hex: #2BD945;
+$Believe-4-hex: #BABF2C;
+$Believe-5-hex: #D98A29;
+
+/* Color Theme Swatches in RGBA */
+$Believe-1-rgba: rgba(65,120,191, 1);
+$Believe-2-rgba: rgba(65,174,217, 1);
+$Believe-3-rgba: rgba(43,217,69, 1);
+$Believe-4-rgba: rgba(186,191,44, 1);
+$Believe-5-rgba: rgba(217,138,41, 1);
+
+/* Color Theme Swatches in HSLA */
+$Believe-1-hsla: hsla(213, 49, 50, 1);
+$Believe-2-hsla: hsla(196, 66, 55, 1);
+$Believe-3-hsla: hsla(128, 69, 50, 1);
+$Believe-4-hsla: hsla(62, 62, 46, 1);
+$Believe-5-hsla: hsla(33, 69, 50, 1);
+
+/* Color Theme Swatches in Hex */
+$Pink-Flow-1-hex: #F27EA9;
+$Pink-Flow-2-hex: #D91895;
+$Pink-Flow-3-hex: #8C0B77;
+$Pink-Flow-4-hex: #1B0140;
+$Pink-Flow-5-hex: #F2D7B6;
+
+/* Color Theme Swatches in RGBA */
+$Pink-Flow-1-rgba: rgba(242,126,169, 1);
+$Pink-Flow-2-rgba: rgba(217,24,149, 1);
+$Pink-Flow-3-rgba: rgba(140,11,119, 1);
+$Pink-Flow-4-rgba: rgba(27,1,64, 1);
+$Pink-Flow-5-rgba: rgba(242,215,182, 1);
+
+/* Color Theme Swatches in HSLA */
+$Pink-Flow-1-hsla: hsla(337, 81, 72, 1);
+$Pink-Flow-2-hsla: hsla(321, 80, 47, 1);
+$Pink-Flow-3-hsla: hsla(309, 85, 29, 1);
+$Pink-Flow-4-hsla: hsla(264, 96, 12, 1);
+$Pink-Flow-5-hsla: hsla(33, 69, 83, 1);
+
+/* Color Theme Swatches in Hex */
+$Live-Authentic-1-hex: #BF246D;
+$Live-Authentic-2-hex: #443E59;
+$Live-Authentic-3-hex: #D5D95F;
+$Live-Authentic-4-hex: #F2994B;
+$Live-Authentic-5-hex: #F25F29;
+
+/* Color Theme Swatches in RGBA */
+$Live-Authentic-1-rgba: rgba(191,36,109, 1);
+$Live-Authentic-2-rgba: rgba(68,62,89, 1);
+$Live-Authentic-3-rgba: rgba(213,217,95, 1);
+$Live-Authentic-4-rgba: rgba(242,153,75, 1);
+$Live-Authentic-5-rgba: rgba(242,95,41, 1);
+
+/* Color Theme Swatches in HSLA */
+$Live-Authentic-1-hsla: hsla(331, 68, 44, 1);
+$Live-Authentic-2-hsla: hsla(253, 17, 29, 1);
+$Live-Authentic-3-hsla: hsla(61, 61, 61, 1);
+$Live-Authentic-4-hsla: hsla(28, 86, 62, 1);
+$Live-Authentic-5-hsla: hsla(16, 88, 55, 1);
+
+/* Color Theme Swatches in Hex */
+$color-theme_IMG_5678-1-hex: #F20F79;
+$color-theme_IMG_5678-2-hex: #F2CB57;
+$color-theme_IMG_5678-3-hex: #F2AC57;
+$color-theme_IMG_5678-4-hex: #F29057;
+$color-theme_IMG_5678-5-hex: #F26363;
+
+/* Color Theme Swatches in RGBA */
+$color-theme_IMG_5678-1-rgba: rgba(242,15,121, 1);
+$color-theme_IMG_5678-2-rgba: rgba(242,203,87, 1);
+$color-theme_IMG_5678-3-rgba: rgba(242,172,87, 1);
+$color-theme_IMG_5678-4-rgba: rgba(242,144,87, 1);
+$color-theme_IMG_5678-5-rgba: rgba(242,99,99, 1);
+
+/* Color Theme Swatches in HSLA */
+$color-theme_IMG_5678-1-hsla: hsla(331, 89, 50, 1);
+$color-theme_IMG_5678-2-hsla: hsla(44, 85, 64, 1);
+$color-theme_IMG_5678-3-hsla: hsla(32, 85, 64, 1);
+$color-theme_IMG_5678-4-hsla: hsla(22, 85, 64, 1);
+$color-theme_IMG_5678-5-hsla: hsla(0, 84, 66, 1);
+
+/* Color Theme Swatches in Hex */
+$Glaciers-1-hex: #025159;
+$Glaciers-2-hex: #7ED0D9;
+$Glaciers-3-hex: #025959;
+$Glaciers-4-hex: #26BFBF;
+$Glaciers-5-hex: #7ED9D9;
+
+/* Color Theme Swatches in RGBA */
+$Glaciers-1-rgba: rgba(2,81,89, 1);
+$Glaciers-2-rgba: rgba(126,208,217, 1);
+$Glaciers-3-rgba: rgba(2,89,89, 1);
+$Glaciers-4-rgba: rgba(38,191,191, 1);
+$Glaciers-5-rgba: rgba(126,217,217, 1);
+
+/* Color Theme Swatches in HSLA */
+$Glaciers-1-hsla: hsla(185, 95, 17, 1);
+$Glaciers-2-hsla: hsla(185, 54, 67, 1);
+$Glaciers-3-hsla: hsla(180, 95, 17, 1);
+$Glaciers-4-hsla: hsla(180, 66, 44, 1);
+$Glaciers-5-hsla: hsla(180, 54, 67, 1);
+
