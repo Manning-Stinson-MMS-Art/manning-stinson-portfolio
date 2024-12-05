@@ -1,8 +1,7 @@
-# app/main.py
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.logger import setup_logger
-from app.api.v1.endpoints import auth, portfolio
+from app.api.v1.endpoints import portfolio
 from app.core.db_connection import engine, Base
 
 logger = setup_logger()
@@ -26,7 +25,7 @@ app.add_middleware(
 async def startup_event():
     logger.info("Starting Portfolio API")
 
-app.include_router(auth.router, prefix="/api/v1", tags=["auth"])
+app.include_router(portfolio.router, prefix="/api/v1", tags=["portfolio"])
 
 if __name__ == "__main__":
     import uvicorn

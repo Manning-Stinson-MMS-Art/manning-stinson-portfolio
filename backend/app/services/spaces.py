@@ -13,20 +13,3 @@ def configure_spaces():
         aws_secret_access_key=os.getenv('SPACES_SECRET')
     )
     return client
-
-def test_connection():
-    spaces_client = configure_spaces()
-    try:
-        response = spaces_client.list_objects(Bucket=os.getenv('SPACES_BUCKET'))
-        print("✅ Connected to Digital Ocean Spaces")
-        print(f"\nContents of bucket: {os.getenv('SPACES_BUCKET')}")
-        if 'Contents' in response:
-            for obj in response['Contents']:
-                print(f"- {obj['Key']}")
-        else:
-            print("Bucket is empty")
-    except Exception as e:
-        print(f"❌ Connection failed: {str(e)}")
-
-if __name__ == "__main__":
-    test_connection()
