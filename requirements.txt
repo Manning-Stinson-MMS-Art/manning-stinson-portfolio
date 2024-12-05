@@ -1,3 +1,15 @@
 python-dotenv==1.0.0
 psycopg2-binary==2.9.9
 SQLAlchemy==2.0.23
+fastapi
+uvicorn
+sqlalchemy
+python-dotenv
+python-jose[cryptography]
+passlib[bcrypt]
+alembic
+pytest
+boto3
+pydantic-settings
+psycopg2-binary
+python-multipart
